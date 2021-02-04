@@ -2,7 +2,7 @@
 
 $font-stack: "Roboto", sans-serif;
 $font-color: rgb(24, 23, 23);
-$bg-color: #dbdbdb;
+$bg-color: #f3f3f3;
 
 ::-webkit-scrollbar {
   width: 6.5px;
@@ -26,21 +26,17 @@ body {
   color: $font-color;
 }
 
+/*
 .core-header {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
-}
+  z-index: 10;
+  justify-self: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
 
-.nav__linklist {
-  list-style: none;
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
-
-  .link {
-    text-decoration: none;
-    color: $font-color;
-    display: block;
+  h2 {
+    font-size: 2.2em;
   }
-}
+}*/

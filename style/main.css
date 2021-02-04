@@ -16,27 +16,23 @@
 }
 
 body {
-  background-color: #dbdbdb;
+  background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
   color: #181717;
 }
 
+/*
 .core-header {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
-}
+  z-index: 10;
+  justify-self: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
 
-.nav__linklist {
-  list-style: none;
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
-}
-
-.nav__linklist .link {
-  text-decoration: none;
-  color: #181717;
-  display: block;
-}
+  h2 {
+    font-size: 2.2em;
+  }
+}*/
 /*# sourceMappingURL=main.css.map */
