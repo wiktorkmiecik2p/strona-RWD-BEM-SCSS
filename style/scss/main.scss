@@ -25,3 +25,22 @@ body {
   font-family: $font-stack;
   color: $font-color;
 }
+
+.core-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__linklist {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+
+  .link {
+    text-decoration: none;
+    color: $font-color;
+    display: block;
+  }
+}

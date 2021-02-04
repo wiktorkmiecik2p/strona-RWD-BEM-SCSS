@@ -20,4 +20,23 @@ body {
   font-family: "Roboto", sans-serif;
   color: #181717;
 }
+
+.core-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__linklist {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.nav__linklist .link {
+  text-decoration: none;
+  color: #181717;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
