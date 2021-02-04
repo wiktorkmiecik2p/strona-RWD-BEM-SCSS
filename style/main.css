@@ -1,24 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 ::-webkit-scrollbar {
   width: 6.5px;
-  background: transparent;
+  background: #e23a3a;
 }
 
 ::-webkit-scrollbar-thumb {
   width: 6.5px;
-  background: #707070;
+  background: #7a7a7a;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
   color: #181717;
+}
+
+.mininav {
+  width: 100%;
+  height: 1.8em;
+  background: #e02626;
+  color: #ffffff;
+  margin: auto;
+  display: none;
+  justify-content: space-around;
+}
+
+.mininav .mininav__text {
+  padding-left: 10%;
+  width: 40%;
+  margin: auto;
+}
+
+.mininav .mininav__iconslist {
+  width: 50%;
+  list-style: none;
+  display: flex;
+}
+
+.mininav .mininav__iconslist .iconlist__element {
+  width: 30%;
+}
+
+.mininav .mininav__iconslist .iconlist__element .iconlist__social-icon {
+  width: 1em;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.background-image1 {
+  width: 100%;
+  height: 40em;
+  background-image: url("../images/pic1.jpg");
+  background-size: cover;
+}
+
+.blur {
+  background: rgba(243, 13, 13, 0.2);
+  backdrop-filter: blur(6px);
+  height: 40em;
+  width: 100%;
+  z-index: 2;
+}
+
+.core-header {
+  z-index: 100;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.core-header h2 {
+  padding-left: 7%;
+  font-size: 2em;
+  width: 50%;
+  color: #ffffff;
+  margin: auto;
+}
+
+.core-header .core-header__nav {
+  padding-right: 5%;
+  width: 30%;
+}
+
+.core-header .core-header__nav .nav__linklist {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.core-header .core-header__nav .nav__linklist .nav__linklist__element {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.core-header .core-header__nav .nav__linklist .nav__linklist__element .link {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.core-header .core-header__nav .nav__linklist .nav__linklist__element .link:hover {
+  font-size: 120%;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1.7px solid #f3f3f3;
+  border-top: 1.7px solid #f3f3f3;
+}
+
+.background-color1 {
+  background: rgba(224, 38, 38, 0.9);
+  width: 100%;
+  height: 20em;
 }
 
 /*

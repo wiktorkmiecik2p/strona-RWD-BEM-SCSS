@@ -6,18 +6,19 @@ $bg-color: #f3f3f3;
 
 ::-webkit-scrollbar {
   width: 6.5px;
-  background: transparent;
+  background: rgb(226, 58, 58);
 }
 
 ::-webkit-scrollbar-thumb {
   width: 6.5px;
-  background: rgb(112, 112, 112);
+  background: rgb(122, 122, 122);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
@@ -26,6 +27,112 @@ body {
   color: $font-color;
 }
 
+.mininav {
+  width: 100%;
+  height: 1.8em;
+  background: rgba(224, 38, 38, 1);
+  color: #ffffff;
+  margin: auto;
+  display: none;
+  justify-content: space-around;
+
+  .mininav__text {
+    padding-left: 10%;
+    width: 40%;
+    margin: auto;
+  }
+
+  .mininav__iconslist {
+    width: 50%;
+    list-style: none;
+    display: flex;
+
+    .iconlist__element {
+      width: 30%;
+      .iconlist__social-icon {
+        width: 1em;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.background-image1 {
+  width: 100%;
+  height: 40em;
+  background-image: url("../images/pic1.jpg");
+  background-size: cover;
+}
+.blur {
+  background: rgba(243, 13, 13, 0.2);
+  backdrop-filter: blur(6px);
+  height: 40em;
+  width: 100%;
+  z-index: 2;
+}
+
+.core-header {
+  z-index: 100;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  h2 {
+    padding-left: 7%;
+    font-size: 2em;
+    width: 50%;
+    color: #ffffff;
+    margin: auto;
+  }
+  .core-header__nav {
+    padding-right: 5%;
+    width: 30%;
+
+    .nav__linklist {
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+
+      .nav__linklist__element {
+        width: 22%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .link {
+          color: #ffffff;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.3s;
+        }
+        .link:hover {
+          font-size: 120%;
+          color: #ffffff;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          border-bottom: 1.7px solid #f3f3f3;
+          border-top: 1.7px solid #f3f3f3;
+        }
+      }
+    }
+  }
+}
+
+.background-color1 {
+  background: rgba(224, 38, 38, 0.9);
+  width: 100%;
+  height: 20em;
+}
 /*
 .core-header {
   width: 60%;
