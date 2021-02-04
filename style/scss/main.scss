@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$font-stack: "Roboto", sans-serif;
+$font-color: rgb(24, 23, 23);
+$bg-color: #dbdbdb;
+
+::-webkit-scrollbar {
+  width: 6.5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6.5px;
+  background: rgb(112, 112, 112);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $font-stack;
+  color: $font-color;
+}
