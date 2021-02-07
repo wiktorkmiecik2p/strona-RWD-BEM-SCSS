@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 ::-webkit-scrollbar {
-  width: 6.5px;
+  width: 5px;
   background: #e23a3a;
 }
 
 ::-webkit-scrollbar-thumb {
-  width: 6.5px;
+  width: 5px;
   background: #7a7a7a;
 }
 
@@ -115,7 +115,7 @@ body {
   display: block;
   text-align: center;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .core-header .core-header__nav .nav__linklist .nav__linklist__element .link:hover {
@@ -128,10 +128,43 @@ body {
   border-top: 1.7px solid #f3f3f3;
 }
 
-.background-color1 {
-  background: rgba(224, 38, 38, 0.9);
+.about-us {
+  background: rgba(255, 255, 255, 0.349);
   width: 100%;
   height: 30em;
+  display: grid;
+  grid-template-columns: 16% 33% 30% 17%;
+  grid-template-rows: 10% 1fr 10%;
+  gap: 1fr;
+}
+
+.about-us .about-us__svgimage {
+  background-image: url("../images/svg/team_spirit.svg");
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.about-us .about-us__aboutus {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.about-us .about-us__aboutus .about-us__title {
+  font-size: 2em;
+  color: #e02626;
+  font-weight: 600;
+  padding-left: 20%;
+}
+
+.about-us .about-us__aboutus .about-us__text {
+  font-size: 1.3em;
+  padding-left: 20%;
+  padding-top: 10%;
 }
 
 /*
