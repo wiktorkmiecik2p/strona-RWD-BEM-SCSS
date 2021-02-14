@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 ::-webkit-scrollbar {
-  width: 5px;
-  background: #e23a3a;
+  width: 0px;
+  background: #7a7a7a;
 }
 
 ::-webkit-scrollbar-thumb {
-  width: 5px;
-  background: #7a7a7a;
+  width: 0px;
+  background: #e23a3a;
 }
 
 * {
@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   color: #181717;
 }
@@ -60,15 +60,16 @@ body {
 
 .background-image1 {
   width: 100%;
-  height: 40em;
+  height: 35em;
   background-image: url("../images/pic1.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
 .blur {
   background: rgba(243, 13, 13, 0.2);
   backdrop-filter: blur(6px);
-  height: 40em;
+  height: 35em;
   width: 100%;
   z-index: 2;
 }
@@ -82,16 +83,16 @@ body {
 }
 
 .core-header h2 {
-  padding-left: 7%;
+  padding-left: 5%;
   font-size: 2em;
-  width: 50%;
+  width: 40%;
   color: #ffffff;
   margin: auto;
 }
 
 .core-header .core-header__nav {
   padding-right: 5%;
-  width: 30%;
+  width: 35%;
 }
 
 .core-header .core-header__nav .nav__linklist {
@@ -104,7 +105,7 @@ body {
 }
 
 .core-header .core-header__nav .nav__linklist .nav__linklist__element {
-  width: 22%;
+  width: 31%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -128,43 +129,163 @@ body {
   border-top: 1.7px solid #f3f3f3;
 }
 
-.about-us {
-  background: rgba(255, 255, 255, 0.349);
-  width: 100%;
-  height: 30em;
-  display: grid;
-  grid-template-columns: 16% 33% 30% 17%;
-  grid-template-rows: 10% 1fr 10%;
-  gap: 1fr;
+@media (min-width: 600px) and (max-width: 1099px) {
+  .background-image1 {
+    width: 100%;
+    height: 25em;
+    background-image: url("../images/pic1.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .blur {
+    background: rgba(243, 13, 13, 0.2);
+    backdrop-filter: blur(6px);
+    height: 25em;
+    width: 100%;
+    z-index: 2;
+  }
+  .about-us {
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: white;
+    width: 100%;
+    height: 28em;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
+  .about-us .about-us__svgimage {
+    background-image: url("../images/svg/team_spirit.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 70%;
+    background-position: center center;
+  }
+  .about-us .about-us__aboutus {
+    width: 90%;
+  }
+  .about-us .about-us__aboutus .about-us__title {
+    font-size: 2.1em;
+    color: #e02626;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-top: 4%;
+    margin-bottom: 2%;
+  }
+  .about-us .about-us__aboutus .about-us__text {
+    font-size: 1.4em;
+    padding-left: 10%;
+  }
+  .section2 {
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #ff4949;
+    width: 100%;
+    height: 28em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section2 .section22image {
+    background-image: url("../images/svg/data_trends.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 70%;
+    background-position: center center;
+  }
+  .section2 .section22 {
+    width: 90%;
+  }
+  .section2 .section22 .section22title {
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-top: 4%;
+    margin-bottom: 2%;
+  }
+  .section2 .section22 .section22text {
+    font-size: 1.4em;
+    padding-left: 10%;
+  }
 }
 
-.about-us .about-us__svgimage {
-  background-image: url("../images/svg/team_spirit.svg");
-  background-size: cover;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.about-us .about-us__aboutus {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.about-us .about-us__aboutus .about-us__title {
-  font-size: 2em;
-  color: #e02626;
-  font-weight: 600;
-  padding-left: 20%;
-}
-
-.about-us .about-us__aboutus .about-us__text {
-  font-size: 1.3em;
-  padding-left: 20%;
-  padding-top: 10%;
+@media (min-width: 1100px) {
+  .about-us {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: white;
+    width: 100%;
+    height: 28em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about-us .about-us__svgimage {
+    background-image: url("../images/svg/team_spirit.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+  }
+  .about-us .about-us__aboutus {
+    width: 33%;
+  }
+  .about-us .about-us__aboutus .about-us__title {
+    font-size: 2.2em;
+    color: #e02626;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-top: 4%;
+  }
+  .about-us .about-us__aboutus .about-us__text {
+    font-size: 1.4em;
+    padding-left: 10%;
+    padding-top: 11%;
+  }
+  .section2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #ff4949;
+    width: 100%;
+    height: 28em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .section2 .section22image {
+    background-image: url("../images/svg/data_trends.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+  }
+  .section2 .section22 {
+    width: 33%;
+  }
+  .section2 .section22 .section22title {
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    float: right;
+    padding-left: 10%;
+    padding-top: 4%;
+  }
+  .section2 .section22 .section22text {
+    text-align: right;
+    float: right;
+    font-size: 1.4em;
+    padding-left: 10%;
+    padding-top: 11%;
+  }
 }
 
 /*
