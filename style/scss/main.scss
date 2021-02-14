@@ -3,6 +3,7 @@
 $font-stack: "Roboto", sans-serif;
 $font-color: rgb(24, 23, 23);
 $bg-color: #ffffff;
+$red-color: rgba(224, 38, 38, 1);
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -30,7 +31,7 @@ body {
 .mininav {
   width: 100%;
   height: 1.8em;
-  background: rgba(224, 38, 38, 1);
+  background: $red-color;
   color: #ffffff;
   margin: auto;
   display: none;
@@ -86,7 +87,7 @@ body {
 
   h2 {
     padding-left: 5%;
-    font-size: 2em;
+    font-size: 2.5em;
     width: 40%;
     color: #ffffff;
     margin: auto;
@@ -128,7 +129,132 @@ body {
     }
   }
 }
-@media (min-width: 600px) and (max-width: 1099px) {
+
+@media (max-width: 699px) {
+  .background-image1 {
+    width: 100%;
+    height: 25em;
+    background-image: url("../images/pic1.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .blur {
+    background: rgba(243, 13, 13, 0.2);
+    backdrop-filter: blur(6px);
+    height: 25em;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .about-us {
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 45em;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+
+    .about-us__svgimage {
+      background-image: url("../images/svg/team_spirit.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 90%;
+      height: 30%;
+      background-position: center center;
+    }
+
+    .about-us__aboutus {
+      width: 90%;
+
+      .about-us__title {
+        font-size: 2.1em;
+        color: $red-color;
+        font-weight: bold;
+        padding-left: 10%;
+        padding-top: 4%;
+        margin-bottom: 2%;
+      }
+      .about-us__text {
+        font-size: 1.4em;
+        padding-left: 10%;
+      }
+    }
+  }
+  .section2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgb(255, 73, 73);
+    width: 100%;
+    height: 45em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .section22image {
+      background-image: url("../images/svg/data_trends.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 90%;
+      height: 70%;
+      background-position: center center;
+    }
+
+    .section22 {
+      width: 90%;
+
+      .section22title {
+        font-size: 2.2em;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        padding-left: 10%;
+        padding-top: 4%;
+        margin-bottom: 2%;
+      }
+      .section22text {
+        font-size: 1.4em;
+        padding-left: 10%;
+      }
+    }
+  }
+  .our_results {
+    width: 100%;
+    height: 32em;
+    background: linear-gradient(
+      -45deg,
+      #a1a1a1 25%,
+      #b9b9b9 25%,
+      #b9b9b9 50%,
+      #dfdfdf 50%,
+      #dfdfdf 75%,
+      #f3f3f3 75%
+    );
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .result {
+      text-align: center;
+      width: 100%;
+      .result__number {
+        font-size: 3.3em;
+        font-weight: bolder;
+        color: $red-color;
+      }
+      .result__text {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+@media (min-width: 700px) and (max-width: 1099px) {
   .background-image1 {
     width: 100%;
     height: 25em;
@@ -171,7 +297,7 @@ body {
 
       .about-us__title {
         font-size: 2.1em;
-        color: rgba(224, 38, 38, 1);
+        color: $red-color;
         font-weight: bold;
         padding-left: 10%;
         padding-top: 4%;
@@ -184,7 +310,6 @@ body {
     }
   }
   .section2 {
-    margin-top: 4%;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 5%;
@@ -222,6 +347,36 @@ body {
       }
     }
   }
+  .our_results {
+    width: 100%;
+    height: 20em;
+    background: linear-gradient(
+      -45deg,
+      #a1a1a1 25%,
+      #b9b9b9 25%,
+      #b9b9b9 50%,
+      #dfdfdf 50%,
+      #dfdfdf 75%,
+      #f3f3f3 75%
+    );
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .result {
+      text-align: center;
+      width: 50%;
+      .result__number {
+        font-size: 3.3em;
+        font-weight: bolder;
+        color: $red-color;
+      }
+      .result__text {
+        font-size: 1.5em;
+      }
+    }
+  }
 }
 
 @media (min-width: 1100px) {
@@ -248,7 +403,7 @@ body {
 
       .about-us__title {
         font-size: 2.2em;
-        color: rgba(224, 38, 38, 1);
+        color: $red-color;
         font-weight: bold;
         padding-left: 10%;
         padding-top: 4%;
@@ -298,18 +453,44 @@ body {
       }
     }
   }
-}
-/*
-.core-header {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
-  justify-self: center;
-  grid-column-start: 1;
-  grid-row-start: 1;
-
-  h2 {
-    font-size: 2.2em;
+  .our_results {
+    width: 100%;
+    height: 15em;
+    background: linear-gradient(
+      -45deg,
+      #a1a1a1 25%,
+      #b9b9b9 25%,
+      #b9b9b9 50%,
+      #dfdfdf 50%,
+      #dfdfdf 75%,
+      #f3f3f3 75%
+    );
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    .result {
+      text-align: center;
+      width: 25%;
+      .result__number {
+        font-size: 3.3em;
+        font-weight: bolder;
+        color: $red-color;
+      }
+      .result__text {
+        font-size: 1.5em;
+      }
+    }
   }
-}*/
+}
+@keyframes div_background1 {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
