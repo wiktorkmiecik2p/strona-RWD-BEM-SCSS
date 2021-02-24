@@ -9,8 +9,11 @@ $red-color: rgba(224, 38, 38, 1);
 $black-color: rgb(24, 17, 17);
 
 @media (min-width: 1125px) {
+  .core-header__nav {
+    padding-right: 5%;
+  }
+
   .about-us {
-    padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 5%;
     padding-right: 5%;
@@ -19,17 +22,14 @@ $black-color: rgb(24, 17, 17);
     height: 28em;
     display: flex;
     justify-content: space-evenly;
-
     .about-us__svgimage {
       background-image: url("../images/svg/team_spirit.svg");
       background-size: contain;
       background-repeat: no-repeat;
       width: 35%;
     }
-
-    .about-us__aboutus {
+    .about-us__textholder {
       width: 33%;
-
       .about-us__title {
         font-size: 2.2em;
         color: $red-color;
@@ -44,6 +44,102 @@ $black-color: rgb(24, 17, 17);
       }
     }
   }
+
+  .our_results {
+    width: 100%;
+    height: 15em;
+    background: linear-gradient(
+      -45deg,
+      #a1a1a1 25%,
+      #b9b9b9 25%,
+      #b9b9b9 50%,
+      #dfdfdf 50%,
+      #dfdfdf 75%,
+      #f3f3f3 75%
+    );
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    .result {
+      text-align: center;
+      width: 25%;
+      .result__number {
+        font-size: 3.3em;
+        font-weight: bolder;
+        color: $red-color;
+      }
+      .result__text {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .our-team {
+    width: 100%;
+    height: 48em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #e4e4e4;
+    .our-team__title {
+      padding-top: 1%;
+      width: 80%;
+      height: 16%;
+      h2 {
+        font-size: 2.3em;
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .our-team__images {
+      width: 87%;
+      height: 85%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .our-team__employee {
+        width: 27%;
+        height: 92%;
+        .employee_img {
+          width: 100%;
+          height: 70%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .employee_text {
+          height: 20%;
+          padding-top: 2%;
+          h3 {
+            font-size: 1.6em;
+          }
+        }
+      }
+      .employee1 {
+        .employee_img {
+          background-image: url("../images/our_employee1.jpg");
+        }
+      }
+      .employee2 {
+        .employee_img {
+          background-image: url("../images/our_employee2.jpg");
+        }
+      }
+      .employee3 {
+        .employee_img {
+          background-image: url("../images/our_employee3.jpg");
+        }
+      }
+    }
+  }
+
   .offer {
     background: rgb(39, 39, 39);
     width: 100%;
@@ -54,10 +150,13 @@ $black-color: rgb(24, 17, 17);
     .offer_course {
       height: 80%;
       width: 21%;
+      border-radius: 10px;
       background: rgb(173, 173, 173);
       .offer_course_image {
         width: 100%;
         height: 50%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
       .offer_course_text {
         width: 100%;
@@ -109,6 +208,7 @@ $black-color: rgb(24, 17, 17);
       }
     }
   }
+
   .offer_more {
     display: none;
     width: 100%;
@@ -148,7 +248,6 @@ $black-color: rgb(24, 17, 17);
         }
       }
     }
-
     &--fortnite {
       background-color: rgb(27, 207, 232);
       .offer_more_image {
@@ -175,35 +274,6 @@ $black-color: rgb(24, 17, 17);
     }
   }
 
-  .our_results {
-    width: 100%;
-    height: 15em;
-    background: linear-gradient(
-      -45deg,
-      #a1a1a1 25%,
-      #b9b9b9 25%,
-      #b9b9b9 50%,
-      #dfdfdf 50%,
-      #dfdfdf 75%,
-      #f3f3f3 75%
-    );
-    background-size: 150% 150%;
-    animation: div_background1 12s ease-in-out infinite;
-    display: flex;
-    align-items: center;
-    .result {
-      text-align: center;
-      width: 25%;
-      .result__number {
-        font-size: 3.3em;
-        font-weight: bolder;
-        color: $red-color;
-      }
-      .result__text {
-        font-size: 1.5em;
-      }
-    }
-  }
   .contact {
     width: 100%;
     height: 26em;
@@ -247,6 +317,7 @@ $black-color: rgb(24, 17, 17);
       }
     }
   }
+
   .footer {
     width: 100%;
     height: 15em;
@@ -256,11 +327,11 @@ $black-color: rgb(24, 17, 17);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    .up {
+    .footer__upside {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 70%;
+      width: 78%;
       height: 60%;
       .footer__logo {
         background: url("../images/logo450.png");
@@ -310,13 +381,13 @@ $black-color: rgb(24, 17, 17);
           }
         }
       }
-      .footer__newsteller {
+      .footer__newsletter {
         width: 20%;
         height: 100%;
       }
     }
-    .down {
-      width: 62%;
+    .footer__downside {
+      width: 77%;
       height: 20%;
       border-top: 0.7px solid #ffffff;
       display: flex;
@@ -329,94 +400,6 @@ $black-color: rgb(24, 17, 17);
       ._dwa {
         width: 48%;
         text-align: right;
-      }
-    }
-  }
-  .our_team {
-    width: 100%;
-    height: 48em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: #e4e4e4;
-    .our_team__title {
-      padding-top: 1%;
-      width: 80%;
-      height: 16%;
-      h2 {
-        font-size: 2.3em;
-        width: 100%;
-        text-align: center;
-      }
-      p {
-        font-size: 1.4em;
-        width: 100%;
-        text-align: center;
-      }
-    }
-    .our_team__images {
-      width: 87%;
-      height: 85%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      .employee1 {
-        width: 27%;
-        height: 92%;
-        .employee_img {
-          width: 100%;
-          height: 70%;
-          background-image: url("../images/our_employee1.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .employee_text {
-          height: 20%;
-          padding-top: 2%;
-          h3 {
-            font-size: 1.6em;
-          }
-        }
-      }
-      .employee2 {
-        width: 27%;
-        height: 92%;
-        .employee_img {
-          width: 100%;
-          height: 70%;
-          background-image: url("../images/our_employee2.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .employee_text {
-          height: 20%;
-          padding-top: 2%;
-          h3 {
-            font-size: 1.6em;
-          }
-        }
-      }
-      .employee3 {
-        width: 27%;
-        height: 92%;
-        .employee_img {
-          width: 100%;
-          height: 70%;
-          background-image: url("../images/our_employee3.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .employee_text {
-          height: 20%;
-          padding-top: 2%;
-          h3 {
-            font-size: 1.6em;
-          }
-        }
       }
     }
   }

@@ -4,7 +4,7 @@
 @media (min-width: 770px) and (max-width: 1124px) {
   .background-image1 {
     width: 100%;
-    height: 25em;
+    height: 30em;
     background-image: url("../images/pic1.jpg");
     background-size: cover;
     background-position: center center;
@@ -12,15 +12,18 @@
   .blur {
     background: rgba(24, 17, 17, 0.219);
     backdrop-filter: blur(6px);
-    height: 25em;
+    height: 30em;
     width: 100%;
     z-index: 2;
   }
   .blur .slogan {
     font-size: 3.5em;
   }
+  .core-header__nav {
+    padding-right: 5%;
+  }
   .about-us {
-    margin-top: 15%;
+    margin-top: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 5%;
@@ -40,10 +43,10 @@
     height: 70%;
     background-position: center center;
   }
-  .about-us .about-us__aboutus {
+  .about-us .about-us__textholder {
     width: 90%;
   }
-  .about-us .about-us__aboutus .about-us__title {
+  .about-us .about-us__textholder .about-us__title {
     font-size: 2.1em;
     color: #e02626;
     font-weight: bold;
@@ -51,9 +54,89 @@
     padding-top: 4%;
     margin-bottom: 2%;
   }
-  .about-us .about-us__aboutus .about-us__text {
+  .about-us .about-us__textholder .about-us__text {
     font-size: 1.4em;
     padding-left: 10%;
+  }
+  .our_results {
+    width: 100%;
+    height: 20em;
+    background: linear-gradient(-45deg, #a1a1a1 25%, #b9b9b9 25%, #b9b9b9 50%, #dfdfdf 50%, #dfdfdf 75%, #f3f3f3 75%);
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .our_results .result {
+    text-align: center;
+    width: 50%;
+  }
+  .our_results .result .result__number {
+    font-size: 3.3em;
+    font-weight: bolder;
+    color: #e02626;
+  }
+  .our_results .result .result__text {
+    font-size: 1.5em;
+  }
+  .our-team {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #e4e4e4;
+  }
+  .our-team .our-team__title {
+    padding-top: 1%;
+    width: 80%;
+    height: 16%;
+  }
+  .our-team .our-team__title h2 {
+    font-size: 2.1\;em;
+    width: 100%;
+    text-align: center;
+  }
+  .our-team .our-team__title p {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+  .our-team .our-team__images {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .our-team .our-team__images .our-team__employee {
+    width: 30%;
+    height: 92%;
+  }
+  .our-team .our-team__images .our-team__employee .employee_img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .our-team .our-team__images .our-team__employee .employee_text {
+    height: 30%;
+    padding-top: 2%;
+  }
+  .our-team .our-team__images .our-team__employee .employee_text h3 {
+    font-size: 1.6em;
+  }
+  .our-team .our-team__images .employee1 .employee_img {
+    background-image: url("../images/our_employee1.jpg");
+  }
+  .our-team .our-team__images .employee2 .employee_img {
+    background-image: url("../images/our_employee2.jpg");
+  }
+  .our-team .our-team__images .employee3 .employee_img {
+    background-image: url("../images/our_employee3.jpg");
   }
   .offer {
     background: #272727;
@@ -66,11 +149,14 @@
   .offer .offer_course {
     height: 80%;
     width: 26%;
+    border-radius: 10px;
     background: #adadad;
   }
   .offer .offer_course .offer_course_image {
     width: 100%;
     height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .offer .offer_course .offer_course_text {
     width: 100%;
@@ -181,29 +267,7 @@
   .offer_more--csgo .offer_more_image {
     background-image: url("../images/oferta/csgo2.jpg");
     background-size: cover;
-    background-position: center center;
-  }
-  .our_results {
-    width: 100%;
-    height: 20em;
-    background: linear-gradient(-45deg, #a1a1a1 25%, #b9b9b9 25%, #b9b9b9 50%, #dfdfdf 50%, #dfdfdf 75%, #f3f3f3 75%);
-    background-size: 150% 150%;
-    animation: div_background1 12s ease-in-out infinite;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .our_results .result {
-    text-align: center;
-    width: 50%;
-  }
-  .our_results .result .result__number {
-    font-size: 3.3em;
-    font-weight: bolder;
-    color: #e02626;
-  }
-  .our_results .result .result__text {
-    font-size: 1.5em;
+    background-position: center right;
   }
   .contact {
     width: 100%;
@@ -252,14 +316,14 @@
     align-items: center;
     justify-content: space-around;
   }
-  footer .up {
+  footer .footer__upside {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 85%;
+    width: 98%;
     height: 60%;
   }
-  footer .up .footer__logo {
+  footer .footer__upside .footer__logo {
     background: url("../images/logo450.png");
     width: 25%;
     height: 100%;
@@ -268,7 +332,7 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
-  footer .up .footer__company {
+  footer .footer__upside .footer__company {
     width: 25%;
     height: 100%;
     border-right: 0.7px solid #ffffff;
@@ -276,14 +340,14 @@
     flex-direction: column;
     justify-content: center;
   }
-  footer .up .footer__company h3 {
+  footer .footer__upside .footer__company h3 {
     text-align: center;
     font-size: 1.8em;
   }
-  footer .up .footer__company p {
+  footer .footer__upside .footer__company p {
     text-align: center;
   }
-  footer .up .footer__links1 {
+  footer .footer__upside .footer__links1 {
     width: 25%;
     height: 100%;
     font-size: 1.3em;
@@ -293,127 +357,51 @@
     justify-content: space-around;
     align-items: center;
   }
-  footer .up .footer__links1 a {
+  footer .footer__upside .footer__links1 a {
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     transition: 0.4s;
     height: 33%;
   }
-  footer .up .footer__links1 a p {
+  footer .footer__upside .footer__links1 a p {
     height: 100%;
     width: 100%;
   }
-  footer .up .footer__links1 a:hover {
+  footer .footer__upside .footer__links1 a:hover {
     color: #e02626;
   }
-  footer .up .footer__newsteller {
+  footer .footer__upside .footer__newsteller {
     width: 20%;
     height: 100%;
   }
-  footer .down {
-    width: 70%;
+  footer .footer__downside {
+    width: 98%;
     height: 20%;
     border-top: 0.7px solid #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  footer .down ._jeden {
+  footer .footer__downside ._jeden {
     width: 48%;
     text-align: left;
   }
-  footer .down ._dwa {
+  footer .footer__downside ._dwa {
     width: 48%;
     text-align: right;
   }
-  .our_team {
-    width: 100%;
-    height: 35em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: #e4e4e4;
+}
+
+@keyframes div_background1 {
+  0% {
+    background-position: 0 50%;
   }
-  .our_team .our_team__title {
-    padding-top: 1%;
-    width: 80%;
-    height: 16%;
+  50% {
+    background-position: 100% 50%;
   }
-  .our_team .our_team__title h2 {
-    font-size: 2.1\;em;
-    width: 100%;
-    text-align: center;
-  }
-  .our_team .our_team__title p {
-    font-size: 1.2em;
-    width: 100%;
-    text-align: center;
-  }
-  .our_team .our_team__images {
-    width: 90%;
-    height: 85%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .our_team .our_team__images .employee1 {
-    width: 30%;
-    height: 92%;
-  }
-  .our_team .our_team__images .employee1 .employee_img {
-    width: 100%;
-    height: 60%;
-    background-image: url("../images/our_employee1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .our_team .our_team__images .employee1 .employee_text {
-    height: 30%;
-    padding-top: 2%;
-  }
-  .our_team .our_team__images .employee1 .employee_text h3 {
-    font-size: 1.6em;
-  }
-  .our_team .our_team__images .employee2 {
-    width: 30%;
-    height: 92%;
-  }
-  .our_team .our_team__images .employee2 .employee_img {
-    width: 100%;
-    height: 60%;
-    background-image: url("../images/our_employee2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .our_team .our_team__images .employee2 .employee_text {
-    height: 30%;
-    padding-top: 2%;
-  }
-  .our_team .our_team__images .employee2 .employee_text h3 {
-    font-size: 1.6em;
-  }
-  .our_team .our_team__images .employee3 {
-    width: 30%;
-    height: 92%;
-  }
-  .our_team .our_team__images .employee3 .employee_img {
-    width: 100%;
-    height: 60%;
-    background-image: url("../images/our_employee3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .our_team .our_team__images .employee3 .employee_text {
-    height: 30%;
-    padding-top: 2%;
-  }
-  .our_team .our_team__images .employee3 .employee_text h3 {
-    font-size: 1.6em;
+  100% {
+    background-position: 0 50%;
   }
 }
 /*# sourceMappingURL=min770max1124.css.map */

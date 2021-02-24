@@ -38,10 +38,8 @@ $black-color: rgb(24, 17, 17);
     h2 {
       display: none;
     }
-
     .core-header__nav {
       width: 90%;
-
       .nav__linklist {
         list-style: none;
         width: 100%;
@@ -49,8 +47,7 @@ $black-color: rgb(24, 17, 17);
         display: flex;
         justify-content: space-around;
         justify-items: center;
-
-        .nav__linklist__element {
+        &__element {
           width: 25%;
           height: 100%;
           display: flex;
@@ -91,7 +88,6 @@ $black-color: rgb(24, 17, 17);
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-
     .about-us__svgimage {
       background-image: url("../images/svg/team_spirit.svg");
       background-size: contain;
@@ -100,10 +96,8 @@ $black-color: rgb(24, 17, 17);
       height: 50%;
       background-position: center center;
     }
-
-    .about-us__aboutus {
+    .about-us__textholder {
       width: 90%;
-
       .about-us__title {
         font-size: 2.1em;
         color: $red-color;
@@ -118,6 +112,105 @@ $black-color: rgb(24, 17, 17);
       }
     }
   }
+
+  .our_results {
+    width: 100%;
+    height: 32em;
+    background: linear-gradient(
+      -45deg,
+      #a1a1a1 25%,
+      #b9b9b9 25%,
+      #b9b9b9 50%,
+      #dfdfdf 50%,
+      #dfdfdf 75%,
+      #f3f3f3 75%
+    );
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .result {
+      text-align: center;
+      width: 100%;
+      .result__number {
+        font-size: 3.3em;
+        font-weight: bolder;
+        color: $red-color;
+      }
+      .result__text {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .our-team {
+    width: 100%;
+    height: 120em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #e4e4e4;
+    .our-team__title {
+      padding-top: 1%;
+      width: 80%;
+      height: 5%;
+      h2 {
+        font-size: 2.1em;
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .our-team__images {
+      width: 90%;
+      height: 91%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .our-team__employee {
+        width: 90%;
+        height: 33%;
+        padding-bottom: 2%;
+        .employee_img {
+          width: 100%;
+          height: 78%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .employee_text {
+          height: 22%;
+          padding-top: 2%;
+          h3 {
+            font-size: 1.6em;
+          }
+        }
+      }
+      .employee1 {
+        .employee_img {
+          background-image: url("../images/our_employee1.jpg");
+        }
+      }
+      .employee2 {
+        .employee_img {
+          background-image: url("../images/our_employee2.jpg");
+        }
+      }
+      .employee3 {
+        .employee_img {
+          background-image: url("../images/our_employee3.jpg");
+        }
+      }
+    }
+  }
+
   .offer {
     background: rgb(39, 39, 39);
     width: 100%;
@@ -127,12 +220,15 @@ $black-color: rgb(24, 17, 17);
     justify-content: space-evenly;
     align-items: center;
     .offer_course {
+      border-radius: 10px;
       height: 27%;
       width: 80%;
       background: rgb(173, 173, 173);
       .offer_course_image {
         width: 100%;
         height: 55%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
       .offer_course_text {
         width: 100%;
@@ -184,7 +280,7 @@ $black-color: rgb(24, 17, 17);
       .offer_course_image {
         background-image: url("../images/oferta/csgo.jpg");
         background-size: cover;
-        background-position: center bottom;
+        background-position: center left;
       }
     }
   }
@@ -196,18 +292,19 @@ $black-color: rgb(24, 17, 17);
     transform-origin: top center;
 
     &--shown {
-      height: 25em;
+      height: 40em;
       transform: scaleX(1);
       display: flex;
       align-items: center;
+      flex-direction: column-reverse;
       justify-content: space-evenly;
       .offer_more_image {
-        height: 70%;
-        width: 38%;
+        height: 40%;
+        width: 90%;
       }
       .offer_more_text {
-        height: 70%;
-        width: 48%;
+        height: 40%;
+        width: 90%;
         h2 {
           font-size: 1.8em;
           padding: 0;
@@ -227,7 +324,6 @@ $black-color: rgb(24, 17, 17);
         }
       }
     }
-
     &--fortnite {
       background-color: rgb(27, 207, 232);
       .offer_more_image {
@@ -253,36 +349,7 @@ $black-color: rgb(24, 17, 17);
       }
     }
   }
-  .our_results {
-    width: 100%;
-    height: 32em;
-    background: linear-gradient(
-      -45deg,
-      #a1a1a1 25%,
-      #b9b9b9 25%,
-      #b9b9b9 50%,
-      #dfdfdf 50%,
-      #dfdfdf 75%,
-      #f3f3f3 75%
-    );
-    background-size: 150% 150%;
-    animation: div_background1 12s ease-in-out infinite;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    .result {
-      text-align: center;
-      width: 100%;
-      .result__number {
-        font-size: 3.3em;
-        font-weight: bolder;
-        color: $red-color;
-      }
-      .result__text {
-        font-size: 1.5em;
-      }
-    }
-  }
+
   .contact {
     width: 100%;
     height: 40em;
@@ -327,6 +394,7 @@ $black-color: rgb(24, 17, 17);
       }
     }
   }
+
   footer {
     width: 100%;
     height: 19em;
@@ -336,7 +404,7 @@ $black-color: rgb(24, 17, 17);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    .up {
+    .footer__upside {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -399,7 +467,7 @@ $black-color: rgb(24, 17, 17);
         align-items: center;
       }
     }
-    .down {
+    .footer__downside {
       padding-top: 2%;
       padding-bottom: 4%;
       width: 70%;
@@ -416,98 +484,6 @@ $black-color: rgb(24, 17, 17);
       ._dwa {
         width: 100%;
         text-align: center;
-      }
-    }
-  }
-  .our_team {
-    width: 100%;
-    height: 120em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #e4e4e4;
-    .our_team__title {
-      padding-top: 1%;
-      width: 80%;
-      height: 5%;
-      h2 {
-        font-size: 2.1em;
-        width: 100%;
-        text-align: center;
-      }
-      p {
-        font-size: 1.2em;
-        width: 100%;
-        text-align: center;
-      }
-    }
-    .our_team__images {
-      width: 90%;
-      height: 91%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      .employee1 {
-        width: 90%;
-        height: 33%;
-        padding-bottom: 2%;
-        .employee_img {
-          width: 100%;
-          height: 78%;
-          background-image: url("../images/our_employee1.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .employee_text {
-          height: 22%;
-          padding-top: 2%;
-          h3 {
-            font-size: 1.6em;
-          }
-        }
-      }
-      .employee2 {
-        width: 90%;
-        height: 33%;
-        padding-bottom: 2%;
-        .employee_img {
-          width: 100%;
-          height: 78%;
-          background-image: url("../images/our_employee2.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .employee_text {
-          height: 22%;
-          padding-top: 2%;
-          h3 {
-            font-size: 1.6em;
-          }
-        }
-      }
-      .employee3 {
-        width: 90%;
-        height: 33%;
-        padding-bottom: 2%;
-        .employee_img {
-          width: 100%;
-          height: 78%;
-          background-image: url("../images/our_employee3.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .employee_text {
-          height: 22%;
-          padding-top: 2%;
-          h3 {
-            font-size: 1.6em;
-          }
-        }
       }
     }
   }

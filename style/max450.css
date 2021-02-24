@@ -20,7 +20,7 @@
     width: 100%;
     text-align: center;
     display: block;
-    font-size: 2.8em;
+    font-size: 2.7em;
     color: #ffffff;
   }
   .blur .slogan {
@@ -49,7 +49,7 @@
   .core-header .core-header__nav .nav__linklist .nav__linklist__element .link {
     color: #ffffff;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.2em;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -66,12 +66,11 @@
   }
   .about-us {
     margin-top: 4%;
-    padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
     background: white;
     width: 100%;
-    height: 38em;
+    height: 30em;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
@@ -84,10 +83,11 @@
     height: 30%;
     background-position: center center;
   }
-  .about-us .about-us__aboutus {
+  .about-us .about-us__textholder {
     width: 90%;
+    height: 60%;
   }
-  .about-us .about-us__aboutus .about-us__title {
+  .about-us .about-us__textholder .about-us__title {
     font-size: 2.1em;
     color: #e02626;
     font-weight: bold;
@@ -95,46 +95,9 @@
     padding-top: 4%;
     margin-bottom: 2%;
   }
-  .about-us .about-us__aboutus .about-us__text {
+  .about-us .about-us__textholder .about-us__text {
     font-size: 1.25em;
     padding-left: 10%;
-  }
-  .section2 {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background: #272727;
-    width: 100%;
-    height: 37em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .section2 .section22image {
-    background-image: url("../images/keyboard.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30%;
-    background-position: center center;
-  }
-  .section2 .section22 {
-    width: 90%;
-  }
-  .section2 .section22 .section22title {
-    font-size: 2.2em;
-    color: white;
-    font-weight: bold;
-    padding-left: 10%;
-    padding-top: 4%;
-    margin-bottom: 2%;
-    color: #e02626;
-  }
-  .section2 .section22 .section22text {
-    font-size: 1.2em;
-    padding-left: 10%;
-    color: #ffffff;
   }
   .our_results {
     width: 100%;
@@ -158,9 +121,207 @@
   .our_results .result .result__text {
     font-size: 1.5em;
   }
+  .our-team {
+    width: 100%;
+    height: 120em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #e4e4e4;
+  }
+  .our-team .our-team__title {
+    padding-top: 1%;
+    width: 80%;
+    height: 5%;
+  }
+  .our-team .our-team__title h2 {
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+  }
+  .our-team .our-team__title p {
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+  .our-team .our-team__images {
+    width: 90%;
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .our-team .our-team__images .our-team__employee {
+    width: 90%;
+    height: 32%;
+    padding-bottom: 2%;
+  }
+  .our-team .our-team__images .our-team__employee .employee_img {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .our-team .our-team__images .our-team__employee .employee_text {
+    height: 30%;
+    padding-top: 2%;
+  }
+  .our-team .our-team__images .our-team__employee .employee_text h3 {
+    font-size: 1.6em;
+    padding-bottom: 2%;
+  }
+  .our-team .our-team__images .employee1 .employee_img {
+    background-image: url("../images/our_employee1.jpg");
+  }
+  .our-team .our-team__images .employee2 .employee_img {
+    background-image: url("../images/our_employee2.jpg");
+  }
+  .our-team .our-team__images .employee3 .employee_img {
+    background-image: url("../images/our_employee3.jpg");
+  }
+  .offer {
+    background: #272727;
+    width: 100%;
+    height: 90em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .offer .offer_course {
+    height: 27%;
+    width: 80%;
+    border-radius: 10px;
+    background: #adadad;
+  }
+  .offer .offer_course .offer_course_image {
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .offer .offer_course .offer_course_text {
+    width: 100%;
+    height: 45%;
+    padding-left: 3%;
+    padding-top: 6%;
+  }
+  .offer .offer_course .offer_course_text h3 {
+    color: #0f0f0e;
+    font-size: 1.4em;
+    margin-bottom: 5%;
+  }
+  .offer .offer_course .offer_course_text p {
+    font-size: 1.07em;
+  }
+  .offer .offer_course .offer_course_text .course_link {
+    transition: 0.3s;
+  }
+  .offer .offer_course .offer_course_text .course_link a {
+    text-decoration: none;
+    color: #000;
+  }
+  .offer .offer_course .offer_course_text .course_link:hover {
+    font-weight: 900;
+    cursor: pointer;
+  }
+  .offer .offer_course .offer_course_text .course_link2 {
+    display: none;
+  }
+  .offer .fortnite {
+    background-color: #1bcfe8;
+  }
+  .offer .fortnite .offer_course_image {
+    background-image: url("../images/oferta/fortnite.jpg");
+    background-size: cover;
+    background-position: center left;
+  }
+  .offer .minecraft {
+    background-color: #1db53c;
+  }
+  .offer .minecraft .offer_course_image {
+    background-image: url("../images/oferta/minecraft.jpg");
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .offer .csgo {
+    background-color: #ffd000;
+  }
+  .offer .csgo .offer_course_image {
+    background-image: url("../images/oferta/csgo.jpg");
+    background-size: cover;
+    background-position: center left;
+  }
+  .offer_more {
+    display: none;
+    width: 100%;
+    transition: 0.15s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: top center;
+  }
+  .offer_more--shown {
+    height: 40em;
+    transform: scaleX(1);
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .offer_more--shown .offer_more_image {
+    height: 40%;
+    width: 90%;
+  }
+  .offer_more--shown .offer_more_text {
+    height: 40%;
+    width: 90%;
+  }
+  .offer_more--shown .offer_more_text h2 {
+    font-size: 1.8em;
+    padding: 0;
+    padding-bottom: 5%;
+    margin: 0;
+  }
+  .offer_more--shown .offer_more_text ul {
+    list-style: none;
+  }
+  .offer_more--shown .offer_more_text ul li {
+    font-size: 1.11em;
+    padding-bottom: 1%;
+  }
+  .offer_more--shown .offer_more_text p {
+    font-size: 1.1em;
+    padding-top: 7%;
+  }
+  .offer_more--fortnite {
+    background-color: #1bcfe8;
+  }
+  .offer_more--fortnite .offer_more_image {
+    background-image: url("../images/oferta/fortnite2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .offer_more--minecraft {
+    background-color: #1db53c;
+  }
+  .offer_more--minecraft .offer_more_image {
+    background-image: url("../images/oferta/minecraft2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .offer_more--csgo {
+    background-color: #ffd000;
+  }
+  .offer_more--csgo .offer_more_image {
+    background-image: url("../images/oferta/csgo2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
   .contact {
     width: 100%;
-    height: 40em;
+    height: 42em;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
@@ -172,7 +333,7 @@
   }
   .contact .contact__text {
     width: 80%;
-    height: 50%;
+    height: 60%;
   }
   .contact .contact__text .contact__title h3 {
     font-size: 2.6em;
@@ -211,7 +372,7 @@
     align-items: center;
     justify-content: space-around;
   }
-  footer .up {
+  footer .footer__upside {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -219,10 +380,10 @@
     width: 70%;
     height: 100%;
   }
-  footer .up .footer__logo {
+  footer .footer__upside .footer__logo {
     display: none;
   }
-  footer .up .footer__company {
+  footer .footer__upside .footer__company {
     width: 100%;
     height: 100%;
     padding-top: 2%;
@@ -232,14 +393,14 @@
     flex-direction: column;
     justify-content: center;
   }
-  footer .up .footer__company h3 {
+  footer .footer__upside .footer__company h3 {
     text-align: center;
     font-size: 1.8em;
   }
-  footer .up .footer__company p {
+  footer .footer__upside .footer__company p {
     text-align: center;
   }
-  footer .up .footer__links1 {
+  footer .footer__upside .footer__links1 {
     width: 100%;
     height: 100%;
     padding-top: 2%;
@@ -251,7 +412,7 @@
     align-items: center;
     border-bottom: 0.7px solid #fff;
   }
-  footer .up .footer__links1 a {
+  footer .footer__upside .footer__links1 a {
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -259,14 +420,14 @@
     height: 20%;
     width: 50%;
   }
-  footer .up .footer__links1 a p {
+  footer .footer__upside .footer__links1 a p {
     height: 100%;
     width: 100%;
   }
-  footer .up .footer__links1 a:hover {
+  footer .footer__upside .footer__links1 a:hover {
     color: #e02626;
   }
-  footer .up .footer__newsteller {
+  footer .footer__upside .footer__newsteller {
     width: 100%;
     height: 100%;
     padding-top: 2%;
@@ -276,7 +437,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  footer .down {
+  footer .footer__downside {
     padding-top: 2%;
     padding-bottom: 4%;
     width: 70%;
@@ -286,106 +447,14 @@
     flex-direction: column;
     justify-content: space-around;
   }
-  footer .down ._jeden {
+  footer .footer__downside ._jeden {
     width: 100%;
     text-align: center;
     margin-bottom: 1%;
   }
-  footer .down ._dwa {
+  footer .footer__downside ._dwa {
     width: 100%;
     text-align: center;
-  }
-  .our_team {
-    width: 100%;
-    height: 120em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #e4e4e4;
-  }
-  .our_team .our_team__title {
-    padding-top: 1%;
-    width: 80%;
-    height: 5%;
-  }
-  .our_team .our_team__title h2 {
-    font-size: 1.8em;
-    width: 100%;
-    text-align: center;
-  }
-  .our_team .our_team__title p {
-    font-size: 1.1em;
-    width: 100%;
-    text-align: center;
-  }
-  .our_team .our_team__images {
-    width: 90%;
-    height: 91%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .our_team .our_team__images .employee1 {
-    width: 90%;
-    height: 33%;
-    padding-bottom: 2%;
-  }
-  .our_team .our_team__images .employee1 .employee_img {
-    width: 100%;
-    height: 78%;
-    background-image: url("../images/our_employee1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .our_team .our_team__images .employee1 .employee_text {
-    height: 22%;
-    padding-top: 2%;
-  }
-  .our_team .our_team__images .employee1 .employee_text h3 {
-    font-size: 1.6em;
-  }
-  .our_team .our_team__images .employee2 {
-    width: 90%;
-    height: 33%;
-    padding-bottom: 2%;
-  }
-  .our_team .our_team__images .employee2 .employee_img {
-    width: 100%;
-    height: 78%;
-    background-image: url("../images/our_employee2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .our_team .our_team__images .employee2 .employee_text {
-    height: 22%;
-    padding-top: 2%;
-  }
-  .our_team .our_team__images .employee2 .employee_text h3 {
-    font-size: 1.6em;
-  }
-  .our_team .our_team__images .employee3 {
-    width: 90%;
-    height: 33%;
-    padding-bottom: 2%;
-  }
-  .our_team .our_team__images .employee3 .employee_img {
-    width: 100%;
-    height: 78%;
-    background-image: url("../images/our_employee3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .our_team .our_team__images .employee3 .employee_text {
-    height: 22%;
-    padding-top: 2%;
-  }
-  .our_team .our_team__images .employee3 .employee_text h3 {
-    font-size: 1.6em;
   }
 }
 /*# sourceMappingURL=max450.css.map */
