@@ -37,14 +37,14 @@
   .offer {
     background: #272727;
     width: 100%;
-    height: 30em;
+    height: 25em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
   .offer .offer_course {
-    height: 70%;
-    width: 18%;
+    height: 80%;
+    width: 21%;
     background: #adadad;
   }
   .offer .offer_course .offer_course_image {
@@ -62,12 +62,18 @@
     font-size: 1.4em;
     margin-bottom: 5%;
   }
-  .offer .offer_course .offer_course_text .course_link {
+  .offer .offer_course .offer_course_text p {
+    font-size: 1.07em;
+  }
+  .offer .offer_course .offer_course_text .course_link2 {
     transition: 0.3s;
   }
-  .offer .offer_course .offer_course_text .course_link:hover {
+  .offer .offer_course .offer_course_text .course_link2:hover {
     font-weight: 900;
     cursor: pointer;
+  }
+  .offer .offer_course .offer_course_text .course_link {
+    display: none;
   }
   .offer .fortnite {
     background-color: #1bcfe8;
@@ -83,7 +89,7 @@
   .offer .minecraft .offer_course_image {
     background-image: url("../images/oferta/minecraft.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
   }
   .offer .csgo {
     background-color: #ffd000;
@@ -91,28 +97,70 @@
   .offer .csgo .offer_course_image {
     background-image: url("../images/oferta/csgo.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center left;
   }
   .offer_more {
-    visibility: hidden;
+    display: none;
     width: 100%;
     transition: 0.15s ease-in-out;
     transform: scaleX(0);
     transform-origin: top center;
   }
   .offer_more--shown {
-    height: 20em;
-    visibility: visible;
+    height: 25em;
     transform: scaleX(1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .offer_more--shown .offer_more_image {
+    height: 70%;
+    width: 38%;
+  }
+  .offer_more--shown .offer_more_text {
+    height: 70%;
+    width: 40%;
+  }
+  .offer_more--shown .offer_more_text h2 {
+    font-size: 2.2em;
+    padding: 0;
+    padding-bottom: 5%;
+    margin: 0;
+  }
+  .offer_more--shown .offer_more_text ul {
+    list-style: none;
+  }
+  .offer_more--shown .offer_more_text ul li {
+    font-size: 1.25em;
+    padding-bottom: 1%;
+  }
+  .offer_more--shown .offer_more_text p {
+    font-size: 1.25em;
+    padding-top: 2%;
   }
   .offer_more--fortnite {
     background-color: #1bcfe8;
   }
+  .offer_more--fortnite .offer_more_image {
+    background-image: url("../images/oferta/fortnite2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
   .offer_more--minecraft {
     background-color: #1db53c;
   }
+  .offer_more--minecraft .offer_more_image {
+    background-image: url("../images/oferta/minecraft2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
   .offer_more--csgo {
     background-color: #ffd000;
+  }
+  .offer_more--csgo .offer_more_image {
+    background-image: url("../images/oferta/csgo2.jpg");
+    background-size: cover;
+    background-position: center center;
   }
   .our_results {
     width: 100%;
@@ -176,7 +224,7 @@
     width: 100%;
     height: 100%;
   }
-  footer {
+  .footer {
     width: 100%;
     height: 15em;
     background: #272727;
@@ -186,14 +234,14 @@
     align-items: center;
     justify-content: space-around;
   }
-  footer .up {
+  .footer .up {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70%;
     height: 60%;
   }
-  footer .up .footer__logo {
+  .footer .up .footer__logo {
     background: url("../images/logo450.png");
     width: 25%;
     height: 100%;
@@ -202,7 +250,7 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
-  footer .up .footer__company {
+  .footer .up .footer__company {
     width: 25%;
     height: 100%;
     border-right: 0.7px solid #ffffff;
@@ -210,14 +258,14 @@
     flex-direction: column;
     justify-content: center;
   }
-  footer .up .footer__company h3 {
+  .footer .up .footer__company h3 {
     text-align: center;
     font-size: 1.8em;
   }
-  footer .up .footer__company p {
+  .footer .up .footer__company p {
     text-align: center;
   }
-  footer .up .footer__links1 {
+  .footer .up .footer__links1 {
     width: 25%;
     height: 100%;
     font-size: 1.3em;
@@ -227,25 +275,25 @@
     justify-content: center;
     align-items: center;
   }
-  footer .up .footer__links1 a {
+  .footer .up .footer__links1 a {
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     transition: 0.4s;
     height: 25%;
   }
-  footer .up .footer__links1 a p {
+  .footer .up .footer__links1 a p {
     height: 100%;
     width: 100%;
   }
-  footer .up .footer__links1 a:hover {
+  .footer .up .footer__links1 a:hover {
     color: #e02626;
   }
-  footer .up .footer__newsteller {
+  .footer .up .footer__newsteller {
     width: 20%;
     height: 100%;
   }
-  footer .down {
+  .footer .down {
     width: 62%;
     height: 20%;
     border-top: 0.7px solid #ffffff;
@@ -253,11 +301,11 @@
     align-items: center;
     justify-content: space-around;
   }
-  footer .down ._jeden {
+  .footer .down ._jeden {
     width: 48%;
     text-align: left;
   }
-  footer .down ._dwa {
+  .footer .down ._dwa {
     width: 48%;
     text-align: right;
   }
