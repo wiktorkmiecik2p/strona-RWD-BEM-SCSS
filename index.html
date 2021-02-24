@@ -4,34 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style/min1125.css" />
+    <link rel="stylesheet" href="style/min770max1124.css" />
+    <link rel="stylesheet" href="style/min451max769.css" />
     <title>RWB-BEM-SCSS</title>
     <link id="favicon" rel="icon" type="image/png" href="./images/logo.png" />
   </head>
 
   <body>
-    <div class="mininav">
-      <p class="mininav__text">+48 123 456 789</p>
-      <ul class="mininav__iconslist">
-        <li class="iconslist__element">
-          <a href="https://www.facebook.com/" target="_blank"
-            ><img class="iconlist__social-icon" src="./images/svg/facebook.svg"
-          /></a>
-        </li>
-        <li class="iconslist__element">
-          <a href="https://www.instagram.com/" target="_blank"
-            ><img
-              class="iconlist__social-icon"
-              src="./images/svg/instagram.svg"
-          /></a>
-        </li>
-        <li class="iconslist__element">
-          <a href="https://www.youtube.com/" target="_blank"
-            ><img class="iconlist__social-icon" src="./images/svg/youtube.svg"
-          /></a>
-        </li>
-      </ul>
-    </div>
     <!--aaaaaaa-->
     <div class="container">
       <div class="background-image1">
@@ -54,7 +34,10 @@
           </header>
           <br /><br /><br /><br />
           <h1 class="alternative-title">CENTRUM GIER</h1>
-          <h2 class="slogan">Twoje miejsce w świecie gier</h2>
+          <h2 class="slogan">
+            Twoje miejsce<br />
+            w świecie gier
+          </h2>
         </div>
       </div>
       <br />
@@ -66,8 +49,7 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
             unde, neque autem inventore eligendi officia? Vitae nulla
             repellendus enim sapiente dolorum sint dicta fugiat ex laboriosam,
-            nesciunt dolor, mollitia magni! Fugiat unde, neque autem inventore
-            eligendi officia?
+            nesciunt dolor, mollitia magni!
           </p>
         </div>
       </section>
@@ -105,12 +87,13 @@
             <div class="employee_text">
               <h3>Cezary Sadowski</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
-                nihil amet voluptatum iusto officiis obcaecati vero quod.
+                Profesjonalny gracz Counter-Strike: Global Offenisve.<br />W
+                swojej karierzy czterokrotnie zwyciężał z drużyną Viktus Pro
+                wygrał międzynarodową lige gier komputerowych ESL.
               </p>
             </div>
           </div>
-
+          <br />
           <div class="employee2">
             <div class="employee_img"></div>
             <div class="employee_text">
@@ -121,7 +104,7 @@
               </p>
             </div>
           </div>
-
+          <br />
           <div class="employee3">
             <div class="employee_img"></div>
             <div class="employee_text">
@@ -134,21 +117,45 @@
           </div>
         </div>
       </div>
-      <section class="section2" id="oferta">
-        <div class="section22">
-          <h2 class="section22title">OFERTA</h2>
-          <p class="section22text">
-            tutaj bedzie oferta, obiecuje <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-            unde, neque autem inventore eligendi officia? Vitae nulla
-            repellendus enim sapiente dolorum sint dicta fugiat ex laboriosam,
-            nesciunt dolor, mollitia magni!
-          </p>
+      <section class="offer" id="oferta">
+        <div class="offer_course fortnite">
+          <div class="offer_course_image"></div>
+          <div class="offer_course_text">
+            <h3>Kurs Fortnite</h3>
+            <p>cena: 200zł/tyg</p>
+            <br />
+            <p class="course_link" id="fortnite_link">czytaj więcej...</p>
+          </div>
         </div>
-        <div class="section22image">
-          <div class="keyboard--blur"></div>
+        <div class="offer_course minecraft">
+          <div class="offer_course_image"></div>
+          <div class="offer_course_text">
+            <h3>Kurs Minecraft</h3>
+            <p>cena: 50zł/tyg</p>
+            <br />
+            <p class="course_link" id="minecraft_link">czytaj więcej...</p>
+          </div>
+        </div>
+        <div class="offer_course csgo">
+          <div class="offer_course_image"></div>
+          <div class="offer_course_text">
+            <h3>Trening CS:GO</h3>
+            <p>cena: 100zł/tyg</p>
+            <br />
+            <p class="course_link" id="csgo_link">czytaj więcej...</p>
+          </div>
         </div>
       </section>
+      <div
+        class="offer_more offer_more--fortnite"
+        id="offer_more--fortnite"
+      ></div>
+      <div
+        class="offer_more offer_more--minecraft"
+        id="offer_more--minecraft"
+      ></div>
+      <div class="offer_more offer_more--csgo" id="offer_more--csgo"></div>
+
       <div class="contact" id="kontakt">
         <div class="nothing"></div>
         <div class="contact__text">
@@ -206,5 +213,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$font-stack: "Lato", sans-serif;
+$font-color: rgb(24, 23, 23);
+$bg-color: #ffffff;
+$red-color: rgba(224, 38, 38, 1);
+$black-color: rgb(24, 17, 17);
+
+@media (min-width: 1125px) {
+  .about-us {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 28em;
+    display: flex;
+    justify-content: space-evenly;
+
+    .about-us__svgimage {
+      background-image: url("../images/svg/team_spirit.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 35%;
+    }
+
+    .about-us__aboutus {
+      width: 33%;
+
+      .about-us__title {
+        font-size: 2.2em;
+        color: $red-color;
+        font-weight: bold;
+        padding-left: 10%;
+        padding-top: 4%;
+      }
+      .about-us__text {
+        font-size: 1.4em;
+        padding-left: 10%;
+        padding-top: 11%;
+      }
+    }
+  }
+  .offer {
+    background: rgb(39, 39, 39);
+    width: 100%;
+    height: 30em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .offer_course {
+      height: 70%;
+      width: 18%;
+      background: rgb(173, 173, 173);
+      .offer_course_image {
+        width: 100%;
+        height: 50%;
+      }
+      .offer_course_text {
+        width: 100%;
+        height: 50%;
+        padding-left: 3%;
+        padding-top: 6%;
+        h3 {
+          color: rgb(15, 15, 14);
+          font-size: 1.4em;
+          margin-bottom: 5%;
+        }
+        p {
+        }
+        .course_link {
+          transition: 0.3s;
+        }
+        .course_link:hover {
+          font-weight: 900;
+          cursor: pointer;
+        }
+      }
+    }
+    .fortnite {
+      background-color: rgb(27, 207, 232);
+      .offer_course_image {
+        background-image: url("../images/oferta/fortnite.jpg");
+        background-size: cover;
+        background-position: center top;
+      }
+    }
+    .minecraft {
+      background-color: rgb(29, 181, 60);
+      .offer_course_image {
+        background-image: url("../images/oferta/minecraft.jpg");
+        background-size: cover;
+        background-position: center bottom;
+      }
+    }
+    .csgo {
+      background-color: rgb(255, 208, 0);
+      .offer_course_image {
+        background-image: url("../images/oferta/csgo.jpg");
+        background-size: cover;
+        background-position: center bottom;
+      }
+    }
+  }
+  .offer_more {
+    visibility: hidden;
+    width: 100%;
+    transition: 0.15s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: top center;
+
+    &--shown {
+      height: 20em;
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    &--fortnite {
+      background-color: rgb(27, 207, 232);
+    }
+    &--minecraft {
+      background-color: rgb(29, 181, 60);
+    }
+    &--csgo {
+      background-color: rgb(255, 208, 0);
+    }
+  }
+
+  .our_results {
+    width: 100%;
+    height: 15em;
+    background: linear-gradient(
+      -45deg,
+      #a1a1a1 25%,
+      #b9b9b9 25%,
+      #b9b9b9 50%,
+      #dfdfdf 50%,
+      #dfdfdf 75%,
+      #f3f3f3 75%
+    );
+    background-size: 150% 150%;
+    animation: div_background1 12s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    .result {
+      text-align: center;
+      width: 25%;
+      .result__number {
+        font-size: 3.3em;
+        font-weight: bolder;
+        color: $red-color;
+      }
+      .result__text {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .contact {
+    width: 100%;
+    height: 26em;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .nothing {
+      width: 13%;
+    }
+    .contact__text {
+      width: 20%;
+      height: 90%;
+      .contact__title {
+        h3 {
+          font-size: 3em;
+          font-weight: 900;
+        }
+        p {
+          font-size: 1.1em;
+          font-weight: 500;
+        }
+      }
+      .address,
+      .phone,
+      .email {
+        h4 {
+          font-size: 1.4em;
+        }
+        p {
+          font-size: 1.1em;
+        }
+      }
+    }
+    .contact__map {
+      width: 46%;
+      height: 90%;
+      .mapa {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 15em;
+    background: rgb(39, 39, 39);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .up {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+      height: 60%;
+      .footer__logo {
+        background: url("../images/logo450.png");
+        width: 25%;
+        height: 100%;
+        border-right: 0.7px solid #ffffff;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .footer__company {
+        width: 25%;
+        height: 100%;
+        border-right: 0.7px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+          text-align: center;
+          font-size: 1.8em;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .footer__links1 {
+        width: 25%;
+        height: 100%;
+        font-size: 1.3em;
+        border-right: 0.7px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+          text-align: center;
+          text-decoration: none;
+          color: #ffffff;
+          transition: 0.4s;
+          height: 25%;
+          p {
+            height: 100%;
+            width: 100%;
+          }
+          &:hover {
+            color: $red-color;
+          }
+        }
+      }
+      .footer__newsteller {
+        width: 20%;
+        height: 100%;
+      }
+    }
+    .down {
+      width: 62%;
+      height: 20%;
+      border-top: 0.7px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      ._jeden {
+        width: 48%;
+        text-align: left;
+      }
+      ._dwa {
+        width: 48%;
+        text-align: right;
+      }
+    }
+  }
+  .our_team {
+    width: 100%;
+    height: 48em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #e4e4e4;
+    .our_team__title {
+      padding-top: 1%;
+      width: 80%;
+      height: 16%;
+      h2 {
+        font-size: 2.3em;
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .our_team__images {
+      width: 87%;
+      height: 85%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .employee1 {
+        width: 27%;
+        height: 92%;
+        .employee_img {
+          width: 100%;
+          height: 70%;
+          background-image: url("../images/our_employee1.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .employee_text {
+          height: 20%;
+          padding-top: 2%;
+          h3 {
+            font-size: 1.6em;
+          }
+        }
+      }
+      .employee2 {
+        width: 27%;
+        height: 92%;
+        .employee_img {
+          width: 100%;
+          height: 70%;
+          background-image: url("../images/our_employee2.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .employee_text {
+          height: 20%;
+          padding-top: 2%;
+          h3 {
+            font-size: 1.6em;
+          }
+        }
+      }
+      .employee3 {
+        width: 27%;
+        height: 92%;
+        .employee_img {
+          width: 100%;
+          height: 70%;
+          background-image: url("../images/our_employee3.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .employee_text {
+          height: 20%;
+          padding-top: 2%;
+          h3 {
+            font-size: 1.6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes div_background1 {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
