@@ -115,6 +115,51 @@ body {
   }
 }
 
+.our-team__images {
+  .employee1 {
+    .employee_img {
+      background-image: url("../images/our_employee1.jpg");
+    }
+  }
+  .employee2 {
+    .employee_img {
+      background-image: url("../images/our_employee2.jpg");
+    }
+  }
+  .employee3 {
+    .employee_img {
+      background-image: url("../images/our_employee3.jpg");
+    }
+  }
+}
+
+.offer_more {
+  &--fortnite {
+    background-color: rgb(27, 207, 232);
+    .offer_more_image {
+      background-image: url("../images/oferta/fortnite2.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  &--minecraft {
+    background-color: rgb(29, 181, 60);
+    .offer_more_image {
+      background-image: url("../images/oferta/minecraft2.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  &--csgo {
+    background-color: rgb(255, 208, 0);
+    .offer_more_image {
+      background-image: url("../images/oferta/csgo2.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}
+
 @keyframes div_background1 {
   0% {
     background-position: 0 50%;
