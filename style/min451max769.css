@@ -163,6 +163,7 @@
   .our-team .our-team__images .our-team__employee .employee_img {
     width: 100%;
     height: 78%;
+    border-radius: 12px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -286,6 +287,77 @@
   .offer_more--shown .offer_more_text p {
     font-size: 1.1em;
     padding-top: 7%;
+  }
+  .partners {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .partners .partners__title {
+    height: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .partners .partners__title h2 {
+    font-size: 2em;
+  }
+  .partners .slider {
+    width: 95%;
+    height: 78%;
+    position: relative;
+  }
+  .partners .slider__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 0 2px;
+  }
+  .partners .slider__content {
+    display: grid;
+    grid-auto-columns: calc(100% / 2);
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+  }
+  .partners .slider__content::-webkit-scrollbar {
+    display: none;
+  }
+  .partners .slider__element {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .partners .slider__element .sneak {
+    font-size: 1.5em;
+  }
+  .partners .slider__element .sneak .orange {
+    font-size: 1em;
+    color: #ff5e00;
+  }
+  .partners .slider__element .yeti-logo {
+    height: 28%;
+  }
+  .partners .slider__element .cola-logo {
+    height: 22%;
+  }
+  .partners .slider__element .niko {
+    font-size: 1.5em;
+  }
+  .partners .slider__element .anime {
+    font-size: 1.5em;
+  }
+  .partners .slider__element .anime span {
+    font-size: 1em;
   }
   .contact {
     width: 100%;

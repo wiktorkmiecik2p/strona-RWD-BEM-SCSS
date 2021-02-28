@@ -311,6 +311,82 @@ $black-color: rgb(24, 17, 17);
     }
   }
 
+  .partners {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .partners__title {
+      height: 22%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: 1.7em;
+      }
+    }
+
+    .slider {
+      width: 95%;
+      height: 78%;
+      position: relative;
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 2;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      &__content {
+        display: grid;
+        grid-auto-columns: calc(100% / 1);
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        width: 100%;
+        height: 100%;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      &__element {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sneak {
+          font-size: 2em;
+          .orange {
+            font-size: 1em;
+            color: #ff5e00;
+          }
+        }
+        .yeti-logo {
+          height: 35%;
+        }
+        .cola-logo {
+          height: 30%;
+        }
+        .niko {
+          font-size: 2em;
+        }
+        .anime {
+          font-size: 2em;
+          span {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+
   .contact {
     width: 100%;
     height: 42em;
@@ -324,7 +400,7 @@ $black-color: rgb(24, 17, 17);
     }
     .contact__text {
       width: 80%;
-      height: 60%;
+      height: 47%;
       .contact__title {
         h3 {
           font-size: 2.6em;
@@ -348,7 +424,7 @@ $black-color: rgb(24, 17, 17);
     }
     .contact__map {
       width: 80%;
-      height: 40%;
+      height: 48%;
       .mapa {
         width: 100%;
         height: 100%;

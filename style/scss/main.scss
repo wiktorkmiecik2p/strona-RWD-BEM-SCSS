@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 $font-stack: "Lato", sans-serif;
 $font-color: rgb(24, 23, 23);
@@ -156,6 +158,89 @@ body {
       background-image: url("../images/oferta/csgo2.jpg");
       background-size: cover;
       background-position: center center;
+    }
+  }
+}
+
+.partners {
+  height: 16.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .partners__title {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 2em;
+    }
+  }
+
+  .slider {
+    width: 80%;
+    height: 78%;
+    position: relative;
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: 2;
+      justify-content: space-between;
+      padding: 0 40px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    &__content {
+      display: grid;
+      grid-auto-columns: calc(100% / 3);
+      grid-auto-flow: column;
+      overflow-x: scroll;
+      width: 100%;
+      height: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__element {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .sneak {
+        font-size: 2em;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        .orange {
+          font-size: 1em;
+          color: #ff5e00;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+        }
+      }
+      .niko {
+        font-size: 2em;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+      }
+      .anime {
+        font-size: 2em;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        span {
+          font-size: 1em;
+          color: #ff70e0;
+        }
+      }
     }
   }
 }

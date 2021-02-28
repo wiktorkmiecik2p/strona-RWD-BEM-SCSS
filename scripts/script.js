@@ -75,3 +75,22 @@ l_c2.addEventListener("click", () => {
   of_m_c.style.display = "flex";
   of_m_c.classList.add("offer_more--shown");
 });
+
+const sliderLeft = document.getElementById("slider-left");
+const sliderRight = document.getElementById("slider-right");
+const sliderContent = document.getElementById("slider-content");
+const scrollOffset = sliderContent.children[0].clientWidth;
+
+sliderLeft.addEventListener("click", () => {
+  sliderContent.scrollBy({
+    left: -scrollOffset,
+    behavior: "smooth",
+  });
+});
+
+sliderRight.addEventListener("click", () => {
+  sliderContent.scrollBy({
+    left: scrollOffset,
+    behavior: "smooth",
+  });
+});
