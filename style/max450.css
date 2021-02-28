@@ -174,7 +174,7 @@
     padding-bottom: 2%;
   }
   .offer {
-    background: #272727;
+    background: #c7c7c7;
     width: 100%;
     height: 90em;
     display: flex;
@@ -400,10 +400,10 @@
     height: 100%;
   }
   footer {
-    font-size: 1em;
+    font-size: 0.95em;
     width: 100%;
     height: 19em;
-    background: #272727;
+    background: #444444;
     color: #ffffff;
     display: flex;
     flex-direction: column;

@@ -131,7 +131,7 @@
     font-size: 1.6em;
   }
   .offer {
-    background: #272727;
+    background: #c7c7c7;
     width: 100%;
     height: 25em;
     display: flex;
@@ -153,6 +153,7 @@
   .offer .offer_course .offer_course_text {
     width: 100%;
     height: 50%;
+    padding: 5%;
     padding-left: 3%;
     padding-top: 6%;
   }
@@ -348,7 +349,7 @@
   footer {
     width: 100%;
     height: 15em;
-    background: #272727;
+    background: #444444;
     color: #ffffff;
     display: flex;
     flex-direction: column;
