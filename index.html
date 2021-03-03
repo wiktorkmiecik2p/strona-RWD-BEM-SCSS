@@ -100,8 +100,11 @@
             <div class="employee_text">
               <h3>Josef Bratan</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                similique repellendus enim voluptatem nulla dolore.
+                To, co odróżnia Benjya od reszty stada, to jego wybitny zmysł
+                gry i mechanika. <br />
+                Jego najważniejsze osiągnięcia w karierze to zwycięstwa w
+                Pucharze Solo Cash Cup, dwa bezpośrednie zwycięstwa FNCS
+                Invitational Qualifier.
               </p>
             </div>
           </div>
@@ -111,8 +114,8 @@
             <div class="employee_text">
               <h3>Butrus Hussain</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus distinctio, laudantium recusandae consequatur.
+                Światowej klasy gracz Minecraft'a. Jego największym osiągnięciem
+                jest zdobycie rekordu świata w speedrun'ie kwadratowej gry.
               </p>
             </div>
           </div>
@@ -167,6 +170,9 @@
             <li>✔️ dostęp do specjalnej treningowej mapy</li>
           </ul>
           <p>cena: 139zł</p>
+          <footer id="zwin1">
+            <img src="./images/svg/icons/cross-sign.svg" width="20px" />
+          </footer>
         </div>
       </div>
       <div class="offer_more offer_more--minecraft" id="offer_more--minecraft">
@@ -180,6 +186,9 @@
             <li>✔️ dostęp do wyjątkowego serwera dla posiadaczy kursu</li>
           </ul>
           <p>cena: 59zł</p>
+          <footer id="zwin2">
+            <img src="./images/svg/icons/cross-sign.svg" width="20px" />
+          </footer>
         </div>
       </div>
       <div class="offer_more offer_more--csgo" id="offer_more--csgo">
@@ -193,6 +202,9 @@
             <li>✔️ dostęp do specjalnych filmów poradnikowych</li>
           </ul>
           <p>cena: 99zł</p>
+          <footer id="zwin3">
+            <img src="./images/svg/icons/cross-sign.svg" width="20px" />
+          </footer>
         </div>
       </div>
 
@@ -221,7 +233,9 @@
             <div class="slider__element">
               <img src="./images/gipede-logo.png" class="cola-logo" />
             </div>
-            <div class="slider__element"><p class="niko">Niko</p></div>
+            <div class="slider__element">
+              <p class="niko">Niko</p>
+            </div>
             <div class="slider__element">
               <p class="anime"><span>Anime</span> World</p>
             </div>
@@ -270,7 +284,7 @@
           <div class="footer__logo"></div>
           <div class="footer__company">
             <h3>CENTRUM GIER</h3>
-            <p>twoje miejsce w świecie gier</p>
+            <p>twoje miejsce<br />w świecie gier</p>
           </div>
           <div class="footer__links1">
             <a href="#onas"><p>O NAS</p></a>
@@ -278,13 +292,55 @@
             <a href="#oferta"><p>OFERTA</p></a>
             <a href="#kontakt"><p>KONTAKT</p></a>
           </div>
-          <div class="footer__newsletter">tu bedzie newsteller</div>
+          <div class="footer__newsletter">
+            <form>
+              <label>
+                Zapisz się do newsletter'a, <br />
+                aby otrzymywać <br />
+                najnowsze informacje
+              </label>
+              <input
+                class="footer__newsletter__email"
+                type="email"
+                name="email"
+                required
+                class="mail"
+                placeholder="E-mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,63}$"
+              />
+              <input
+                class="footer__newsletter__submit"
+                type="submit"
+                name="submit"
+                value="ZAPISZ SIĘ"
+              />
+            </form>
+          </div>
         </div>
         <div class="footer__downside">
           <p class="_jeden">© Created by Wiktor Kmiecik</p>
           <p class="_dwa">All rights reserved</p>
         </div>
       </footer>
+    </div>
+    <div class="popup__container">
+      <div class="popup">
+        <img
+          src="images/svg/icons/cross-sign.svg"
+          width="20px"
+          class="popup__cross"
+        />
+        <img
+          src="images/svg/icons/check.svg"
+          width="100px"
+          class="popup__check"
+        />
+        <h3 class="popup__title">Dziękujemy!</h3>
+        <p class="popup__text"></p>
+        <div>
+          <button class="popup__button"></button>
+        </div>
+      </div>
     </div>
 
     <script src="/scripts/script.js"></script>

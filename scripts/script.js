@@ -1,6 +1,9 @@
 let l_f = document.getElementById("fortnite_link");
 let l_m = document.getElementById("minecraft_link");
 let l_c = document.getElementById("csgo_link");
+let zwin1 = document.getElementById("zwin1");
+let zwin2 = document.getElementById("zwin2");
+let zwin3 = document.getElementById("zwin3");
 
 let l_f2 = document.getElementById("fortnite_link2");
 let l_m2 = document.getElementById("minecraft_link2");
@@ -74,6 +77,21 @@ l_c2.addEventListener("click", () => {
 
   of_m_c.style.display = "flex";
   of_m_c.classList.add("offer_more--shown");
+});
+
+zwin1.addEventListener("click", () => {
+  of_m_f.style.display = "none";
+  of_m_f.classList.remove("offer_more--shown");
+});
+
+zwin2.addEventListener("click", () => {
+  of_m_m.style.display = "none";
+  of_m_m.classList.remove("offer_more--shown");
+});
+
+zwin3.addEventListener("click", () => {
+  of_m_c.style.display = "none";
+  of_m_c.classList.remove("offer_more--shown");
 });
 
 const sliderLeft = document.getElementById("slider-left");
