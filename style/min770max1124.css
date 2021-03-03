@@ -345,9 +345,9 @@
     width: 100%;
     height: 100%;
   }
-  footer {
+  .footer {
     width: 100%;
-    height: 15em;
+    height: 20em;
     background: #444444;
     color: #ffffff;
     display: flex;
@@ -355,14 +355,14 @@
     align-items: center;
     justify-content: space-around;
   }
-  footer .footer__upside {
+  .footer .footer__upside {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 98%;
     height: 60%;
   }
-  footer .footer__upside .footer__logo {
+  .footer .footer__upside .footer__logo {
     background: url("../images/logo450.png");
     width: 25%;
     height: 100%;
@@ -370,24 +370,25 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    display: none;
   }
-  footer .footer__upside .footer__company {
-    width: 25%;
+  .footer .footer__upside .footer__company {
+    width: 30%;
     height: 100%;
     border-right: 0.7px solid #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  footer .footer__upside .footer__company h3 {
+  .footer .footer__upside .footer__company h3 {
     text-align: center;
     font-size: 1.8em;
   }
-  footer .footer__upside .footer__company p {
+  .footer .footer__upside .footer__company p {
     text-align: center;
   }
-  footer .footer__upside .footer__links1 {
-    width: 25%;
+  .footer .footer__upside .footer__links1 {
+    width: 30%;
     height: 100%;
     font-size: 1.3em;
     border-right: 0.7px solid #ffffff;
@@ -396,25 +397,64 @@
     justify-content: space-around;
     align-items: center;
   }
-  footer .footer__upside .footer__links1 a {
-    text-align: center;
+  .footer .footer__upside .footer__links1 a {
     text-decoration: none;
     color: #ffffff;
     transition: 0.4s;
     height: 33%;
+    display: flex;
+    align-items: center;
   }
-  footer .footer__upside .footer__links1 a p {
-    height: 100%;
+  .footer .footer__upside .footer__links1 a p {
     width: 100%;
   }
-  footer .footer__upside .footer__links1 a:hover {
+  .footer .footer__upside .footer__links1 a:hover {
     color: #e02626;
   }
-  footer .footer__upside .footer__newsteller {
-    width: 20%;
+  .footer .footer__upside .footer__newsletter {
+    width: 30%;
     height: 100%;
   }
-  footer .footer__downside {
+  .footer .footer__upside .footer__newsletter form {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer .footer__upside .footer__newsletter form label {
+    height: 40%;
+    width: 80%;
+    font-size: 1em;
+  }
+  .footer .footer__upside .footer__newsletter form .footer__newsletter__email {
+    height: 18%;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding-left: 5%;
+    background: #9c9c9c;
+  }
+  .footer .footer__upside .footer__newsletter form .footer__newsletter__submit {
+    height: 18%;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: #646363;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .footer .footer__upside .footer__newsletter form .footer__newsletter__submit:hover {
+    background-color: #92d445;
+    color: #ffffff;
+  }
+  .footer .footer__downside {
     width: 98%;
     height: 20%;
     border-top: 0.7px solid #ffffff;
@@ -422,13 +462,17 @@
     align-items: center;
     justify-content: space-around;
   }
-  footer .footer__downside ._jeden {
+  .footer .footer__downside ._jeden {
     width: 48%;
     text-align: left;
   }
-  footer .footer__downside ._dwa {
+  .footer .footer__downside ._dwa {
     width: 48%;
     text-align: right;
+  }
+  .popup {
+    width: 50%;
+    height: 40%;
   }
 }
 

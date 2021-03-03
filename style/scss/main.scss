@@ -254,48 +254,6 @@ body {
 
 .footer {
   background: #3a3a3a;
-  .footer__upside {
-    .footer__newsletter {
-      form {
-        height: 100%;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        label {
-          height: 31%;
-          width: 86%;
-        }
-        .footer__newsletter__email {
-          height: 25%;
-          width: 85%;
-          border-radius: 5px;
-          border: none;
-          font-size: 0.7em;
-          font-weight: 600;
-          padding-left: 5%;
-          background: rgb(156, 156, 156);
-        }
-        .footer__newsletter__submit {
-          height: 25%;
-          width: 85%;
-          border-radius: 5px;
-          border: none;
-          background-color: #fff;
-          font-size: 0.7em;
-          font-weight: 900;
-          color: #646363;
-          transition: 0.3s;
-          cursor: pointer;
-          &:hover {
-            background-color: rgb(146, 212, 69);
-            color: #ffffff;
-          }
-        }
-      }
-    }
-  }
 }
 
 .popup__container {
@@ -310,8 +268,6 @@ body {
   z-index: 30;
   bottom: 0;
   .popup {
-    width: 20%;
-    height: 40%;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
@@ -326,6 +282,7 @@ body {
       height: 20%;
     }
     &__title {
+      padding-top: 6%;
       align-self: center;
       height: 10%;
       text-align: center;

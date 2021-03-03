@@ -232,6 +232,9 @@ $black-color: rgb(24, 17, 17);
           font-size: 1.25em;
           padding-top: 2%;
         }
+        footer {
+          
+        }
       }
     }
   }
@@ -344,8 +347,47 @@ $black-color: rgb(24, 17, 17);
         }
       }
       .footer__newsletter {
-        width: 20%;
+        width: 22%;
         height: 100%;
+        form {
+          height: 100%;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          label {
+            height: 45%;
+            width: %;
+            font-size: 1em;
+          }
+          .footer__newsletter__email {
+            height: 22%;
+            width: 85%;
+            border-radius: 5px;
+            border: none;
+            font-size: 0.7em;
+            font-weight: 600;
+            padding-left: 5%;
+            background: rgb(156, 156, 156);
+          }
+          .footer__newsletter__submit {
+            height: 22%;
+            width: 85%;
+            border-radius: 5px;
+            border: none;
+            background-color: #fff;
+            font-size: 0.7em;
+            font-weight: 900;
+            color: #646363;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(146, 212, 69);
+              color: #ffffff;
+            }
+          }
+        }
       }
     }
     .footer__downside {
@@ -364,6 +406,10 @@ $black-color: rgb(24, 17, 17);
         text-align: right;
       }
     }
+  }
+  .popup {
+    width: 30%;
+    height: 40%;
   }
 }
 
