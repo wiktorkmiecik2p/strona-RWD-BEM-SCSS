@@ -157,19 +157,19 @@
   }
   .our-team .our-team__images .our-team__employee {
     width: 90%;
-    height: 33%;
+    height: 32%;
     padding-bottom: 2%;
   }
   .our-team .our-team__images .our-team__employee .employee_img {
     width: 100%;
-    height: 78%;
+    height: 70%;
     border-radius: 12px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
   .our-team .our-team__images .our-team__employee .employee_text {
-    height: 22%;
+    height: 29%;
     padding-top: 2%;
   }
   .our-team .our-team__images .our-team__employee .employee_text h3 {
@@ -403,7 +403,7 @@
   }
   .footer {
     width: 100%;
-    height: 20em;
+    height: 24em;
     background: #444444;
     color: #ffffff;
     display: flex;
@@ -425,8 +425,6 @@
   .footer .footer__upside .footer__company {
     width: 100%;
     height: 35%;
-    padding-top: 2%;
-    padding-bottom: 2%;
     border-bottom: 0.7px solid #fff;
     display: flex;
     flex-direction: column;
@@ -442,7 +440,8 @@
   .footer .footer__upside .footer__links1 {
     width: 100%;
     height: 20%;
-    font-size: 1.1em;
+    padding-bottom: 4%;
+    font-size: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -469,6 +468,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2%;
   }
   .footer .footer__upside .footer__newsletter form {
     height: 100%;
