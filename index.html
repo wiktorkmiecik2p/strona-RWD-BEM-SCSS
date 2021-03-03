@@ -296,7 +296,7 @@
             <form>
               <label>
                 Zapisz się do newsletter'a, <br />
-                aby otrzymywać <br />
+                i otrzymuj <br />
                 najnowsze informacje
               </label>
               <input
@@ -304,6 +304,7 @@
                 type="email"
                 name="email"
                 required
+                id="newsletterEmail"
                 class="mail"
                 placeholder="E-mail"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,63}$"
@@ -312,6 +313,7 @@
                 class="footer__newsletter__submit"
                 type="submit"
                 name="submit"
+                id="newsletterSubmit"
                 value="ZAPISZ SIĘ"
               />
             </form>
@@ -323,12 +325,13 @@
         </div>
       </footer>
     </div>
-    <div class="popup__container">
+    <div class="popup__container" id="popup">
       <div class="popup">
         <img
           src="images/svg/icons/cross-sign.svg"
-          width="20px"
+          width="15px"
           class="popup__cross"
+          id="popupClose"
         />
         <img
           src="images/svg/icons/check.svg"
@@ -336,9 +339,9 @@
           class="popup__check"
         />
         <h3 class="popup__title">Dziękujemy!</h3>
-        <p class="popup__text"></p>
+        <p class="popup__text">Wkrótce się z Tobą skontaktujemy.</p>
         <div>
-          <button class="popup__button"></button>
+          <input class="popup__button" id="popupOK" type="submit" value="OK" />
         </div>
       </div>
     </div>

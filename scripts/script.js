@@ -112,3 +112,21 @@ sliderRight.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+let newsletterSubmit = document.getElementById("newsletterSubmit");
+let popupClose = document.getElementById("popupClose");
+let popupOK = document.getElementById("popupOK");
+let newsletterEmail = document.getElementById("newsletterEmail");
+let popup = document.getElementById("popup");
+
+newsletterSubmit.addEventListener("click", () => {
+  popup.style.visibility = "visible";
+});
+
+popupClose.addEventListener("click", () => {
+  popup.style.visibility = "hidden";
+});
+
+popupOK.addEventListener("click", () => {
+  popup.style.visibility = "hidden";
+});
