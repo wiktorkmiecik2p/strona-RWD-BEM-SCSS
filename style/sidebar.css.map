@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "scss/sidebar.scss"
-    ],
-    "names": [],
-    "file": "sidebar.css"
-}
