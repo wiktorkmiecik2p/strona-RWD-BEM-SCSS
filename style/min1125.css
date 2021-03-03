@@ -333,9 +333,9 @@
     align-items: center;
   }
   .footer .footer__upside .footer__newsletter form legend {
-    height: 45%;
+    height: 40%;
     width: 90%;
-    font-size: 1em;
+    font-size: 1.05em;
   }
   .footer .footer__upside .footer__newsletter form .footer__newsletter__email {
     height: 22%;
