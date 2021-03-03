@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito&family=Roboto:wght@900&display=swap");
 ::-webkit-scrollbar {
   width: 0px;
   background: #7a7a7a;
@@ -130,37 +126,36 @@ body {
   background-image: url("../images/our_employee3.jpg");
 }
 
+.offer_more {
+  background-color: #dddddd;
+}
+
+.offer_more_text p {
+  margin-top: 5%;
+}
+
 .offer_more_text footer {
   width: 100%;
   text-align: right;
   cursor: pointer;
 }
 
-.offer_more--fortnite {
-  background-color: #1bcfe8;
-}
-
 .offer_more--fortnite .offer_more_image {
+  border-radius: 10px;
   background-image: url("../images/oferta/fortnite2.jpg");
   background-size: cover;
   background-position: center center;
 }
 
-.offer_more--minecraft {
-  background-color: #1db53c;
-}
-
 .offer_more--minecraft .offer_more_image {
+  border-radius: 10px;
   background-image: url("../images/oferta/minecraft2.jpg");
   background-size: cover;
   background-position: center center;
 }
 
-.offer_more--csgo {
-  background-color: #ffd000;
-}
-
 .offer_more--csgo .offer_more_image {
+  border-radius: 10px;
   background-image: url("../images/oferta/csgo2.jpg");
   background-size: cover;
   background-position: center center;

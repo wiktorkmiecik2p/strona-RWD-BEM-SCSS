@@ -96,10 +96,10 @@ zwin3.addEventListener("click", () => {
 
 const sliderLeft = document.getElementById("slider-left");
 const sliderRight = document.getElementById("slider-right");
-const sliderContent = document.getElementById("slider-content");
-const scrollOffset = sliderContent.children[0].clientWidth;
+let sliderContent = document.getElementById("slider-content");
 
 sliderLeft.addEventListener("click", () => {
+  const scrollOffset = sliderContent.children[0].clientWidth;
   sliderContent.scrollBy({
     left: -scrollOffset,
     behavior: "smooth",
@@ -107,6 +107,7 @@ sliderLeft.addEventListener("click", () => {
 });
 
 sliderRight.addEventListener("click", () => {
+  const scrollOffset = sliderContent.children[0].clientWidth;
   sliderContent.scrollBy({
     left: scrollOffset,
     behavior: "smooth",
