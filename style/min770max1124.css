@@ -423,7 +423,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .footer .footer__upside .footer__newsletter form label {
+  .footer .footer__upside .footer__newsletter form legend {
     height: 40%;
     width: 80%;
     font-size: 1em;
