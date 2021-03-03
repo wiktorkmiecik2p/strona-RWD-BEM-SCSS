@@ -251,11 +251,9 @@ $black-color: rgb(24, 17, 17);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    .nothing {
-      width: 13%;
-    }
+
     .contact__text {
-      width: 20%;
+      width: 30%;
       height: 90%;
       .contact__title {
         h3 {
