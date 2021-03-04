@@ -120,7 +120,8 @@ let popupOK = document.getElementById("popupOK");
 let newsletterEmail = document.getElementById("newsletterEmail");
 let popup = document.getElementById("popup");
 
-newsletterSubmit.addEventListener("click", () => {
+newsletterSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
   if (!(newsletterEmail.value.trim() === "")) {
     console.log("debuguj");
     popup.style.visibility = "visible";

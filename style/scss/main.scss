@@ -267,7 +267,6 @@ body {
   align-items: center;
   z-index: 30;
   bottom: 0;
-  transition: 0.3s;
   .popup {
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -280,10 +279,11 @@ body {
     }
     &__check {
       align-self: center;
-      height: 20%;
+      height: 19%;
     }
     &__title {
-      padding-top: 6%;
+      padding-top: 2%;
+      padding-bottom: 2.5%;
       align-self: center;
       height: 10%;
       text-align: center;

@@ -326,7 +326,7 @@
     color: #e02626;
   }
   .footer .footer__upside .footer__newsletter {
-    width: 22%;
+    width: 25%;
     height: 100%;
   }
   .footer .footer__upside .footer__newsletter form {
@@ -340,7 +340,7 @@
   .footer .footer__upside .footer__newsletter form legend {
     height: 40%;
     width: 90%;
-    font-size: 1.05em;
+    font-size: 0.9em;
   }
   .footer .footer__upside .footer__newsletter form .footer__newsletter__email {
     height: 22%;
