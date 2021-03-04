@@ -361,8 +361,8 @@ $black-color: rgb(24, 17, 17);
           align-items: center;
           legend {
             height: 40%;
-            width: 90%;
-            font-size: 0.9em;
+            width: 85%;
+            font-size: 0.97em;
           }
           .footer__newsletter__email {
             height: 22%;
@@ -413,6 +413,11 @@ $black-color: rgb(24, 17, 17);
   .popup {
     width: 30%;
     height: 40%;
+  }
+}
+@media (min-width: 1300px) {
+  .footer__newsletter__legend {
+    font-size: 1.1em;
   }
 }
 
