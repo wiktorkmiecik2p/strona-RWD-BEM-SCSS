@@ -121,7 +121,10 @@ let newsletterEmail = document.getElementById("newsletterEmail");
 let popup = document.getElementById("popup");
 
 newsletterSubmit.addEventListener("click", () => {
-  popup.style.visibility = "visible";
+  if (!(newsletterEmail.value.trim() === "")) {
+    console.log("debuguj");
+    popup.style.visibility = "visible";
+  }
 });
 
 popupClose.addEventListener("click", () => {
