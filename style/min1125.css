@@ -45,56 +45,32 @@
     margin-right: 1%;
   }
   .our_results {
-    width: 100%;
     height: 15em;
-    background: linear-gradient(-45deg, #a1a1a1 25%, #b9b9b9 25%, #b9b9b9 50%, #dfdfdf 50%, #dfdfdf 75%, #f3f3f3 75%);
-    background-size: 150% 150%;
-    animation: div_background1 12s ease-in-out infinite;
-    display: flex;
-    align-items: center;
   }
   .our_results .result {
-    text-align: center;
     width: 25%;
   }
   .our_results .result .result__number {
     font-size: 3.3em;
-    font-weight: bolder;
-    color: #e02626;
   }
   .our_results .result .result__text {
     font-size: 1.5em;
   }
   .our-team {
-    width: 100%;
     height: 45em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: #e4e4e4;
   }
   .our-team .our-team__title {
-    padding-top: 1%;
-    width: 80%;
     height: 16%;
   }
   .our-team .our-team__title h2 {
     font-size: 2.3em;
-    width: 100%;
-    text-align: center;
   }
   .our-team .our-team__title p {
     font-size: 1.4em;
-    width: 100%;
-    text-align: center;
   }
   .our-team .our-team__images {
     width: 87%;
     height: 85%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
   .our-team .our-team__images .our-team__employee {
     width: 27%;
@@ -103,10 +79,6 @@
   .our-team .our-team__images .our-team__employee .employee_img {
     width: 100%;
     height: 65%;
-    border-radius: 12px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
   .our-team .our-team__images .our-team__employee .employee_text {
     height: 20%;
@@ -116,86 +88,28 @@
     font-size: 1.6em;
   }
   .offer {
-    background: #c7c7c7;
-    width: 100%;
     height: 25em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
   .offer .offer_course {
-    height: 80%;
     width: 23%;
-    border-radius: 10px;
-    background: #adadad;
   }
   .offer .offer_course .offer_course_image {
-    width: 100%;
     height: 50%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
   .offer .offer_course .offer_course_text {
-    width: 100%;
     height: 50%;
-    padding-left: 3%;
-    padding-top: 6%;
-  }
-  .offer .offer_course .offer_course_text h3 {
-    color: #0f0f0e;
-    font-size: 1.4em;
-    margin-bottom: 5%;
-  }
-  .offer .offer_course .offer_course_text p {
-    font-size: 1.07em;
-  }
-  .offer .offer_course .offer_course_text .course_link2 {
-    transition: 0.3s;
-  }
-  .offer .offer_course .offer_course_text .course_link2:hover {
-    font-weight: 900;
-    cursor: pointer;
-  }
-  .offer .offer_course .offer_course_text .course_link {
-    display: none;
-  }
-  .offer .fortnite {
-    background-color: #1bcfe8;
   }
   .offer .fortnite .offer_course_image {
-    background-image: url("../images/oferta/fortnite.jpg");
-    background-size: cover;
     background-position: center top;
   }
-  .offer .minecraft {
-    background-color: #1db53c;
-  }
   .offer .minecraft .offer_course_image {
-    background-image: url("../images/oferta/minecraft.jpg");
-    background-size: cover;
     background-position: center center;
   }
-  .offer .csgo {
-    background-color: #ffd000;
-  }
   .offer .csgo .offer_course_image {
-    background-image: url("../images/oferta/csgo.jpg");
-    background-size: cover;
     background-position: center left;
-  }
-  .offer_more {
-    display: none;
-    width: 100%;
-    transition: 0.15s ease-in-out;
-    transform: scaleX(0);
-    transform-origin: top center;
   }
   .offer_more--shown {
     height: 25em;
-    transform: scaleX(1);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
   }
   .offer_more--shown .offer_more_image {
     height: 70%;
@@ -207,20 +121,34 @@
   }
   .offer_more--shown .offer_more_text h2 {
     font-size: 2.2em;
-    padding: 0;
-    padding-bottom: 5%;
-    margin: 0;
-  }
-  .offer_more--shown .offer_more_text ul {
-    list-style: none;
   }
   .offer_more--shown .offer_more_text ul li {
     font-size: 1.25em;
-    padding-bottom: 1%;
   }
   .offer_more--shown .offer_more_text p {
     font-size: 1.25em;
     padding-top: 2%;
+  }
+  .partners .slider {
+    width: 86%;
+  }
+  .partners .slider__overlay {
+    padding: 0 15px;
+  }
+  .partners .slider__content {
+    grid-auto-columns: calc(100% / 4);
+  }
+  .partners .slider__element .sneak {
+    font-size: 2em;
+  }
+  .partners .slider__element .sneak .orange {
+    font-size: 1em;
+  }
+  .partners .slider__element .niko {
+    font-size: 2em;
+  }
+  .partners .slider__element .anime {
+    font-size: 2em;
   }
   .contact {
     width: 100%;
@@ -261,44 +189,15 @@
     height: 100%;
   }
   .footer {
-    width: 100%;
     height: 18em;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
   }
   .footer .footer__upside {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 78%;
+    width: 85%;
     height: 60%;
-  }
-  .footer .footer__upside .footer__logo {
-    background: url("../images/logo450.png");
-    width: 25%;
-    height: 100%;
-    border-right: 0.7px solid #ffffff;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
   .footer .footer__upside .footer__company {
     width: 25%;
     height: 100%;
-    border-right: 0.7px solid #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .footer .footer__upside .footer__company h3 {
-    text-align: center;
-    font-size: 1.8em;
-  }
-  .footer .footer__upside .footer__company p {
-    text-align: center;
   }
   .footer .footer__upside .footer__links1 {
     width: 25%;
@@ -369,7 +268,7 @@
     color: #ffffff;
   }
   .footer .footer__downside {
-    width: 77%;
+    width: 84%;
     height: 20%;
     border-top: 0.7px solid #ffffff;
     display: flex;

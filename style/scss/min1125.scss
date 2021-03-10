@@ -54,28 +54,11 @@ $black-color: rgb(24, 17, 17);
   }
 
   .our_results {
-    width: 100%;
     height: 15em;
-    background: linear-gradient(
-      -45deg,
-      #a1a1a1 25%,
-      #b9b9b9 25%,
-      #b9b9b9 50%,
-      #dfdfdf 50%,
-      #dfdfdf 75%,
-      #f3f3f3 75%
-    );
-    background-size: 150% 150%;
-    animation: div_background1 12s ease-in-out infinite;
-    display: flex;
-    align-items: center;
     .result {
-      text-align: center;
       width: 25%;
       .result__number {
         font-size: 3.3em;
-        font-weight: bolder;
-        color: $red-color;
       }
       .result__text {
         font-size: 1.5em;
@@ -84,44 +67,25 @@ $black-color: rgb(24, 17, 17);
   }
 
   .our-team {
-    width: 100%;
     height: 45em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: #e4e4e4;
     .our-team__title {
-      padding-top: 1%;
-      width: 80%;
       height: 16%;
       h2 {
         font-size: 2.3em;
-        width: 100%;
-        text-align: center;
       }
       p {
         font-size: 1.4em;
-        width: 100%;
-        text-align: center;
       }
     }
     .our-team__images {
       width: 87%;
       height: 85%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       .our-team__employee {
         width: 27%;
         height: 92%;
         .employee_img {
           width: 100%;
           height: 65%;
-          border-radius: 12px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
         }
         .employee_text {
           height: 20%;
@@ -135,87 +99,36 @@ $black-color: rgb(24, 17, 17);
   }
 
   .offer {
-    background: rgb(199, 199, 199);
-    width: 100%;
     height: 25em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     .offer_course {
-      height: 80%;
       width: 23%;
-      border-radius: 10px;
-      background: rgb(173, 173, 173);
       .offer_course_image {
-        width: 100%;
         height: 50%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
       }
       .offer_course_text {
-        width: 100%;
         height: 50%;
-        padding-left: 3%;
-        padding-top: 6%;
-        h3 {
-          color: rgb(15, 15, 14);
-          font-size: 1.4em;
-          margin-bottom: 5%;
-        }
-        p {
-          font-size: 1.07em;
-        }
-        .course_link2 {
-          transition: 0.3s;
-        }
-        .course_link2:hover {
-          font-weight: 900;
-          cursor: pointer;
-        }
-        .course_link {
-          display: none;
-        }
       }
     }
     .fortnite {
-      background-color: rgb(27, 207, 232);
       .offer_course_image {
-        background-image: url("../images/oferta/fortnite.jpg");
-        background-size: cover;
         background-position: center top;
       }
     }
     .minecraft {
-      background-color: rgb(29, 181, 60);
       .offer_course_image {
-        background-image: url("../images/oferta/minecraft.jpg");
-        background-size: cover;
         background-position: center center;
       }
     }
     .csgo {
-      background-color: rgb(255, 208, 0);
       .offer_course_image {
-        background-image: url("../images/oferta/csgo.jpg");
-        background-size: cover;
         background-position: center left;
       }
     }
   }
 
   .offer_more {
-    display: none;
-    width: 100%;
-    transition: 0.15s ease-in-out;
-    transform: scaleX(0);
-    transform-origin: top center;
-
     &--shown {
       height: 25em;
-      transform: scaleX(1);
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
       .offer_more_image {
         height: 70%;
         width: 38%;
@@ -225,20 +138,43 @@ $black-color: rgb(24, 17, 17);
         width: 40%;
         h2 {
           font-size: 2.2em;
-          padding: 0;
-          padding-bottom: 5%;
-          margin: 0;
         }
         ul {
-          list-style: none;
           li {
             font-size: 1.25em;
-            padding-bottom: 1%;
           }
         }
         p {
           font-size: 1.25em;
           padding-top: 2%;
+        }
+      }
+    }
+  }
+
+  .partners {
+    .slider {
+      width: 86%;
+      &__overlay {
+        padding: 0 15px;
+      }
+
+      &__content {
+        grid-auto-columns: calc(100% / 4);
+      }
+
+      &__element {
+        .sneak {
+          font-size: 2em;
+          .orange {
+            font-size: 1em;
+          }
+        }
+        .niko {
+          font-size: 2em;
+        }
+        .anime {
+          font-size: 2em;
         }
       }
     }
@@ -287,42 +223,13 @@ $black-color: rgb(24, 17, 17);
   }
 
   .footer {
-    width: 100%;
     height: 18em;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     .footer__upside {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 78%;
+      width: 85%;
       height: 60%;
-      .footer__logo {
-        background: url("../images/logo450.png");
-        width: 25%;
-        height: 100%;
-        border-right: 0.7px solid #ffffff;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
       .footer__company {
         width: 25%;
         height: 100%;
-        border-right: 0.7px solid #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h3 {
-          text-align: center;
-          font-size: 1.8em;
-        }
-        p {
-          text-align: center;
-        }
       }
       .footer__links1 {
         width: 25%;
@@ -334,10 +241,6 @@ $black-color: rgb(24, 17, 17);
         justify-content: center;
         align-items: center;
         a {
-          text-align: center;
-          text-decoration: none;
-          color: #ffffff;
-          transition: 0.4s;
           height: 25%;
           display: flex;
           align-items: center;
@@ -394,7 +297,7 @@ $black-color: rgb(24, 17, 17);
       }
     }
     .footer__downside {
-      width: 77%;
+      width: 84%;
       height: 20%;
       border-top: 0.7px solid #ffffff;
       display: flex;

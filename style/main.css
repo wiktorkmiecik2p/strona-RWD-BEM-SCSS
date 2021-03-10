@@ -114,27 +114,198 @@ body {
   border-top: 1.7px solid #f3f3f3;
 }
 
-.our-team__images .employee1 .employee_img {
+.our_results {
+  width: 100%;
+  height: 20em;
+  background: linear-gradient(-45deg, #a1a1a1 25%, #b9b9b9 25%, #b9b9b9 50%, #dfdfdf 50%, #dfdfdf 75%, #f3f3f3 75%);
+  background-size: 150% 150%;
+  animation: div_background1 12s ease-in-out infinite;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.our_results .result {
+  text-align: center;
+}
+
+.our_results .result .result__number {
+  font-weight: bolder;
+  color: #e02626;
+}
+
+.our-team {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.our-team .our-team__title {
+  padding-top: 1%;
+  width: 80%;
+}
+
+.our-team .our-team__title h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.our-team .our-team__title p {
+  width: 100%;
+  text-align: center;
+}
+
+.our-team .our-team__images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.our-team .our-team__images .employee1 .employee_img {
   background-image: url("../images/our_employee1.jpg");
 }
 
-.our-team__images .employee2 .employee_img {
+.our-team .our-team__images .employee2 .employee_img {
   background-image: url("../images/our_employee2.jpg");
 }
 
-.our-team__images .employee3 .employee_img {
+.our-team .our-team__images .employee3 .employee_img {
   background-image: url("../images/our_employee3.jpg");
 }
 
+.our-team .our-team__images .our-team__employee {
+  width: 90%;
+  height: 32%;
+  padding-bottom: 2%;
+}
+
+.our-team .our-team__images .our-team__employee .employee_img {
+  width: 100%;
+  height: 70%;
+  border-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.offer {
+  background: #c7c7c7;
+  width: 100%;
+  height: 25em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.offer .offer_course {
+  height: 80%;
+  border-radius: 10px;
+  background: #adadad;
+}
+
+.offer .offer_course .offer_course_image {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+}
+
+.offer .offer_course .offer_course_text {
+  width: 100%;
+  height: 50%;
+  padding-left: 3%;
+  padding-top: 6%;
+}
+
+.offer .offer_course .offer_course_text h3 {
+  color: #0f0f0e;
+  font-size: 1.4em;
+  margin-bottom: 5%;
+}
+
+.offer .offer_course .offer_course_text p {
+  font-size: 1.07em;
+}
+
+.offer .offer_course .offer_course_text .course_link2 {
+  transition: 0.3s;
+}
+
+.offer .offer_course .offer_course_text .course_link2:hover {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.offer .offer_course .offer_course_text .course_link {
+  display: none;
+}
+
+.offer .fortnite {
+  background-color: white;
+}
+
+.offer .fortnite .offer_course_image {
+  background-image: url("../images/oferta/fortnite.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.offer .minecraft {
+  background-color: white;
+}
+
+.offer .minecraft .offer_course_image {
+  background-image: url("../images/oferta/minecraft.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.offer .csgo {
+  background-color: white;
+}
+
+.offer .csgo .offer_course_image {
+  background-image: url("../images/oferta/csgo.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
 .offer_more {
+  display: none;
+  width: 100%;
   background-color: #dddddd;
 }
 
-.offer_more_text p {
+.offer_more--shown {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.offer_more--shown .offer_more_text h2 {
+  font-size: 1.5em;
+  padding: 0;
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+.offer_more--shown .offer_more_text ul {
+  list-style: none;
+}
+
+.offer_more--shown .offer_more_text ul li {
+  padding-bottom: 1%;
+}
+
+.offer_more--shown .offer_more_text p {
   margin-top: 5%;
 }
 
-.offer_more_text footer {
+.offer_more--shown .offer_more_text footer {
   width: 100%;
   text-align: right;
   cursor: pointer;
@@ -162,7 +333,7 @@ body {
 }
 
 .partners {
-  height: 16.5em;
+  height: 16em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -170,7 +341,7 @@ body {
 }
 
 .partners .partners__title {
-  height: 20%;
+  height: 21%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +352,7 @@ body {
 }
 
 .partners .slider {
-  width: 80%;
+  width: 90%;
   height: 78%;
   position: relative;
 }
@@ -253,7 +424,63 @@ body {
 }
 
 .footer {
+  width: 100%;
   background: #3a3a3a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .footer__upside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer__upside .footer__logo {
+  background: url("../images/logo450.png");
+  width: 25%;
+  height: 100%;
+  border-right: 0.7px solid #ffffff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.footer .footer__upside .footer__company {
+  border-right: 0.7px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .footer__upside .footer__company h3 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.footer .footer__upside .footer__company p {
+  text-align: center;
+}
+
+.footer .footer__upside .footer__links1 a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+  height: 33%;
+}
+
+.footer .footer__upside .footer__links1 a p {
+  height: 100%;
+  width: 100%;
+  font-size: 0.75em;
+}
+
+.footer .footer__upside .footer__links1 a:hover {
+  color: #e02626;
 }
 
 .popup__container {
