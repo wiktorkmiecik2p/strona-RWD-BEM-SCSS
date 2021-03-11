@@ -63,19 +63,11 @@
     border-top: 1.7px solid #f3f3f3;
   }
   .about-us {
-    background: white;
-    width: 100%;
     height: 50em;
-    display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
   }
   .about-us .about-us__svgimage {
-    background-image: url("../images/gamer.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 15px;
     width: 90%;
     height: 45%;
   }
@@ -83,25 +75,8 @@
     width: 80%;
     height: 47%;
   }
-  .about-us .about-us__textholder .about-us__title {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.1em;
-    font-weight: 900;
-    padding-bottom: 2%;
-  }
-  .about-us .about-us__textholder .about-us__text {
-    font-size: 1em;
-    color: #414141;
-  }
-  .about-us .about-us__textholder .about-us__list {
-    list-style: none;
-  }
   .about-us .about-us__textholder .about-us__list li {
     font-size: 0.95em;
-    padding-bottom: 0.5%;
-  }
-  .about-us .about-us__textholder .about-us__list li img {
-    margin-right: 1%;
   }
   .our_results {
     height: 35em;
@@ -170,6 +145,9 @@
   .offer .offer_course .offer_course_text .course_link a {
     text-decoration: none;
     color: #000;
+  }
+  .offer .offer_course .offer_course_text .course_link2 {
+    display: none;
   }
   .offer .fortnite .offer_course_image {
     background-position: center left;
@@ -286,6 +264,8 @@
   .footer .footer__upside .footer__company {
     width: 100%;
     height: 35%;
+    border-right: none;
+    border-bottom: 0.7px solid #ffffff;
   }
   .footer .footer__upside .footer__company h3 {
     font-size: 1.9em;
@@ -293,21 +273,12 @@
   .footer .footer__upside .footer__links1 {
     width: 100%;
     height: 20%;
-    display: flex;
+    padding-bottom: 1.5%;
     justify-content: space-around;
-    align-items: center;
     border-bottom: 0.7px solid #fff;
   }
   .footer .footer__upside .footer__links1 a {
     height: 33%;
-  }
-  .footer .footer__upside .footer__links1 a p {
-    height: 100%;
-    width: 100%;
-    font-size: 0.75em;
-  }
-  .footer .footer__upside .footer__links1 a:hover {
-    color: #e02626;
   }
   .footer .footer__upside .footer__newsletter {
     width: 100%;
@@ -318,49 +289,27 @@
     align-items: center;
   }
   .footer .footer__upside .footer__newsletter form {
-    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
   }
   .footer .footer__upside .footer__newsletter form legend {
     width: 100%;
     text-align: center;
-    font-size: 1em;
   }
   .footer .footer__upside .footer__newsletter form .footer__newsletter__email {
     height: 35%;
     width: 42%;
-    border-radius: 5px;
-    border: none;
-    font-size: 0.7em;
-    font-weight: 600;
-    padding-left: 5%;
-    background: #9c9c9c;
   }
   .footer .footer__upside .footer__newsletter form .footer__newsletter__submit {
     width: 42%;
     height: 35%;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    font-size: 0.7em;
-    font-weight: 900;
-    color: #646363;
-    transition: 0.3s;
-    cursor: pointer;
   }
   .footer__downside {
     padding-top: 2%;
     padding-bottom: 4%;
     width: 70%;
     height: 20%;
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
   }
   .footer__downside ._jeden {
     width: 100%;
