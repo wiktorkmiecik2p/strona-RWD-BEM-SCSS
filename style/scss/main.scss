@@ -43,7 +43,7 @@ body {
 }
 .background-image1 {
   width: 100%;
-  height: 37em;
+  height: 39em;
   background-image: url("../images/pic1.jpg");
   background-size: cover;
   background-position: center center;
@@ -51,7 +51,7 @@ body {
 .blur {
   background: rgba(24, 17, 17, 0.219);
   backdrop-filter: blur(6px);
-  height: 37em;
+  height: 39em;
   width: 100%;
   z-index: 2;
   .slogan {
@@ -136,6 +136,7 @@ body {
     .about-us__text {
       font-size: 1.15em;
       color: #414141;
+      line-height: 140%;
     }
     .about-us__list {
       list-style: none;
@@ -219,12 +220,16 @@ body {
       height: 32%;
       padding-bottom: 2%;
       .employee_img {
-        width: 100%;
-        height: 70%;
         border-radius: 12px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        .employee_text {
+          h3 {
+            font-size: 1.6em;
+            padding-bottom: 2%;
+          }
+        }
       }
     }
   }
@@ -385,7 +390,6 @@ body {
       display: flex;
       z-index: 2;
       justify-content: space-between;
-      padding: 0 15px;
 
       img {
         cursor: pointer;
